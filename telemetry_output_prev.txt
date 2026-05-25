@@ -1,0 +1,2416 @@
+
+--- START TELEMETRY RUN: Tables [2,3,4] ---
+[MultiplicationTelemetry] {
+  stepIndex: 0,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 1,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 2,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 3,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 4,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 5,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 6,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 7,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 1,
+  targetRunLength: 8,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 8,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 2,
+  targetRunLength: 8,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 9,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 3,
+  targetRunLength: 8,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 10,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 4,
+  targetRunLength: 8,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 11,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 5,
+  targetRunLength: 8,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 12,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 6,
+  targetRunLength: 8,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 13,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 7,
+  targetRunLength: 8,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 14,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 8,
+  targetRunLength: 8,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 15,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 16,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 17,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 18,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 19,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 20,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 21,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 22,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 23,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 2,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 24,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 3,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 25,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 4,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 26,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 5,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 27,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 6,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 28,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 1,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 29,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 2,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 30,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 3,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 31,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 4,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 32,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 5,
+  targetRunLength: 9,
+  skipSize: 5,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 33,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 6,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 34,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 7,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 35,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 8,
+  targetRunLength: 9,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 36,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 9,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 37,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 1,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 38,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 2,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 39,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 3,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 40,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 4,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 41,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 5,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 42,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 6,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 43,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 7,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 44,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 8,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 45,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 9,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 46,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 1,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 47,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 2,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 48,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 3,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 49,
+  difficultyLevel: 5,
+  currentTable: 2,
+  stepsInCurrentTable: 4,
+  targetRunLength: 9,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+--- END TELEMETRY RUN ---
+
+
+--- START TELEMETRY RUN: Tables [3,4,6] ---
+[MultiplicationTelemetry] {
+  stepIndex: 0,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 1,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 2,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 2,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 3,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 3,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 4,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 4,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 5,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 5,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 6,
+  targetRunLength: 6,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 6,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 1,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 7,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 2,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 8,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 3,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 9,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 4,
+  targetRunLength: 9,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 10,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 5,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 11,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 6,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 12,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 7,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 13,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 8,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 14,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 9,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 15,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 16,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 17,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 18,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 19,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 20,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 21,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 22,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 23,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 2,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 24,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 3,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 25,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 4,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 26,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 5,
+  targetRunLength: 6,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 27,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 6,
+  targetRunLength: 6,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 28,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 29,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 30,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 31,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 32,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 33,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 34,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 35,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 36,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 37,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 38,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 39,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 40,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 41,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 42,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 43,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 44,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 45,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 46,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 47,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 48,
+  difficultyLevel: 5,
+  currentTable: 4,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 49,
+  difficultyLevel: 5,
+  currentTable: 3,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+--- END TELEMETRY RUN ---
+
+
+--- START TELEMETRY RUN: Tables [5,6,7] ---
+[MultiplicationTelemetry] {
+  stepIndex: 0,
+  difficultyLevel: 5,
+  currentTable: 6,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 1,
+  difficultyLevel: 5,
+  currentTable: 6,
+  stepsInCurrentTable: 2,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 2,
+  difficultyLevel: 5,
+  currentTable: 6,
+  stepsInCurrentTable: 3,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 3,
+  difficultyLevel: 5,
+  currentTable: 6,
+  stepsInCurrentTable: 4,
+  targetRunLength: 6,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 4,
+  difficultyLevel: 5,
+  currentTable: 6,
+  stepsInCurrentTable: 5,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 5,
+  difficultyLevel: 5,
+  currentTable: 6,
+  stepsInCurrentTable: 6,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 6,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 7,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 8,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 9,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 10,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 11,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 12,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 13,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 1,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 14,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 2,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 15,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 3,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 16,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 4,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 17,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 5,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 18,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 6,
+  targetRunLength: 9,
+  skipSize: 5,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 19,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 7,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 20,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 8,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 21,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 9,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 22,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 1,
+  targetRunLength: 8,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 23,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 2,
+  targetRunLength: 8,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 24,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 3,
+  targetRunLength: 8,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 25,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 4,
+  targetRunLength: 8,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 26,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 5,
+  targetRunLength: 8,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 27,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 6,
+  targetRunLength: 8,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 28,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 7,
+  targetRunLength: 8,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 29,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 8,
+  targetRunLength: 8,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 30,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 31,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 32,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 33,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 34,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 35,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 5,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 36,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 37,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 1,
+  targetRunLength: 10,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 38,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 2,
+  targetRunLength: 10,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 39,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 3,
+  targetRunLength: 10,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 40,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 4,
+  targetRunLength: 10,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 41,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 5,
+  targetRunLength: 10,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 42,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 6,
+  targetRunLength: 10,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 43,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 7,
+  targetRunLength: 10,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 44,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 8,
+  targetRunLength: 10,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 45,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 9,
+  targetRunLength: 10,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 46,
+  difficultyLevel: 5,
+  currentTable: 5,
+  stepsInCurrentTable: 10,
+  targetRunLength: 10,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 47,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 1,
+  targetRunLength: 8,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 48,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 2,
+  targetRunLength: 8,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 49,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 3,
+  targetRunLength: 8,
+  skipSize: 5,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+--- END TELEMETRY RUN ---
+
+
+--- START TELEMETRY RUN: Tables [7,8,9] ---
+[MultiplicationTelemetry] {
+  stepIndex: 0,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 1,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 1,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 2,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 2,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 3,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 3,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 4,
+  targetRunLength: 9,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 4,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 5,
+  targetRunLength: 9,
+  skipSize: 5,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 5,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 6,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 6,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 7,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 7,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 8,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 8,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 9,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 9,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 10,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 2,
+  targetRunLength: 6,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 11,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 3,
+  targetRunLength: 6,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 12,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 4,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 13,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 5,
+  targetRunLength: 6,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 14,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 6,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 15,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 16,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 17,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 18,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 19,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 20,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 21,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 22,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 1,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 23,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 2,
+  targetRunLength: 9,
+  skipSize: 4,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 24,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 3,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 25,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 4,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 26,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 5,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 27,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 6,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 28,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 7,
+  targetRunLength: 9,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 29,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 8,
+  targetRunLength: 9,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 30,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 9,
+  targetRunLength: 9,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 31,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 1,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 32,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 2,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: true,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 33,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 3,
+  targetRunLength: 7,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 34,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 4,
+  targetRunLength: 7,
+  skipSize: 5,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 35,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 5,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 36,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 6,
+  targetRunLength: 7,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 37,
+  difficultyLevel: 5,
+  currentTable: 9,
+  stepsInCurrentTable: 7,
+  targetRunLength: 7,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 38,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 39,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 2,
+  targetRunLength: 6,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 40,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 3,
+  targetRunLength: 6,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 41,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 4,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 42,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 5,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 43,
+  difficultyLevel: 5,
+  currentTable: 8,
+  stepsInCurrentTable: 6,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 44,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 1,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: true
+}
+[MultiplicationTelemetry] {
+  stepIndex: 45,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 2,
+  targetRunLength: 6,
+  skipSize: 2,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: true,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 46,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 3,
+  targetRunLength: 6,
+  skipSize: 3,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 47,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 4,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 48,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 5,
+  targetRunLength: 6,
+  skipSize: 0,
+  modifierUsed: false,
+  bridgePatternUsed: true,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+[MultiplicationTelemetry] {
+  stepIndex: 49,
+  difficultyLevel: 5,
+  currentTable: 7,
+  stepsInCurrentTable: 6,
+  targetRunLength: 6,
+  skipSize: 1,
+  modifierUsed: false,
+  bridgePatternUsed: false,
+  overlapLanding: false,
+  transitionOccurred: false
+}
+--- END TELEMETRY RUN ---
+
