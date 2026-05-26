@@ -1,0 +1,5 @@
+{
+  "name": "MathMatch",
+  "description": "A strategic math puzzle game where players select numbered tiles to form equations, sequences, and board-clearing combos.",
+  "requestFramePermissions": []
+}
