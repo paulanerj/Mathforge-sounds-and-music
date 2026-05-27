@@ -1,5 +1,8 @@
+────────────────────────────────────────────────────────────────────────────────
 {
-  "name": "Mathforge-sound-music-system",
-  "description": "this one broke off another version. this is a stabel build. this one is designed for adding music.\n",
-  "requestFramePermissions": []
+  "name": "Mathgrid-TableAddOn",
+  "description": "A fast-paced, multi-touch math grid game where you path unique tiles to reach target sums.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
+────────────────────────────────────────────────────────────────────────────────

@@ -1,3 +1,4 @@
+────────────────────────────────────────────────────────────────────────────────
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
@@ -6,7 +7,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/ded47315-b55b-4a05-888d-b501bd92b872
+View your app in AI Studio: https://ai.studio/apps/13423eaa-44d9-44c2-8764-ad1b36afe25d
 
 ## Run Locally
 
@@ -18,3 +19,4 @@ View your app in AI Studio: https://ai.studio/apps/ded47315-b55b-4a05-888d-b501b
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+────────────────────────────────────────────────────────────────────────────────

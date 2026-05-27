@@ -1,0 +1,72 @@
+────────────────────────────────────────────────────────────────────────────────
+/* ── CombineGrid tile animations ───────────────────────────────────────────── */
+
+@keyframes cgTilePop {
+  0%   { transform: scale(1); }
+  35%  { transform: scale(1.28); }
+  68%  { transform: scale(0.94); }
+  100% { transform: scale(1); }
+}
+
+@keyframes cgTileSpawn {
+  0%   { transform: scale(0);    opacity: 0; }
+  52%  { transform: scale(1.18); opacity: 1; }
+  78%  { transform: scale(0.94); opacity: 1; }
+  100% { transform: scale(1);    opacity: 1; }
+}
+
+@keyframes cgParticleBurst {
+  0%   { transform: translate(0px, 0px) rotate(0deg) scale(1.1); opacity: 1; }
+  60%  { opacity: 0.7; }
+  100% { transform: translate(var(--pdx), calc(var(--pdy) + 24px)) rotate(45deg) scale(0); opacity: 0; }
+}
+
+@keyframes cgTrophyPulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.06); }
+}
+
+@keyframes cgBoardShake {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-3px); }
+  50%  { transform: translateX(3px); }
+  75%  { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes cgScorePopup {
+  0%   { transform: translateY(0)     translateX(-50%); opacity: 1; }
+  100% { transform: translateY(-52px) translateX(-50%); opacity: 0; }
+}
+
+@keyframes cgFrozenShimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes cgBombIdle {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.02); }
+}
+
+@keyframes cgFuseGlow {
+  0%, 100% { opacity: 0.8; }
+  50%       { opacity: 1; }
+}
+
+@keyframes cgBombCountdown {
+  from { stroke-dashoffset: 126; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes cgTileBlast {
+  0%   { transform: scale(1);   opacity: 1; }
+  30%  { transform: scale(1.15); opacity: 0.9; }
+  100% { transform: scale(0);   opacity: 0; }
+}
+
+@keyframes cgOneGlow {
+  0%, 100% { filter: brightness(1) hue-rotate(0deg); }
+  50%       { filter: brightness(1.1) hue-rotate(15deg); }
+}
+────────────────────────────────────────────────────────────────────────────────

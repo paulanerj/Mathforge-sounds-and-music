@@ -1,0 +1,155 @@
+────────────────────────────────────────────────────────────────────────────────
+    background: #0f172a; /* Deep Slate */
+    background-image: 
+    background-color: #0f172a;
+  background-color: rgba(26, 15, 5, 0.85) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background: var(--tile-locked-bg) !important; 
+  background-color: var(--card-bg) !important;
+  background: linear-gradient(135deg, #FFD740, #FF8F00) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  --card-bg: #0c1020;            /* dark cosmic background */
+  background: linear-gradient(135deg, var(--bg-gradient-from), var(--bg-gradient-via), var(--bg-gradient-to)) !important;
+  transition: background-color 0.5s ease, background-image 0.5s ease, border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease, fill 0.5s ease, stroke 0.5s ease, opacity 0.5s ease;
+  background-color: var(--card-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: rgba(5, 5, 5, 0.75) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: #3f3f46 !important;
+  background-color: transparent !important;
+  background: linear-gradient(135deg, #3f3f46, #27272a, #18181b) !important;
+  background: linear-gradient(135deg, #ea580c, #c2410c, #7c2d12) !important; /* Molten copper/iron plate */
+  background-color: var(--grid-bg) !important;
+  background: linear-gradient(135deg, #ea580c, #ca5a15) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  background-color: #18181b !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: #18181b !important;
+  background-color: #27272a !important;
+  background-color: rgba(6, 182, 212, 0.1) !important;
+  background-color: #18181b !important;
+  background-color: #06b6d4 !important;
+  background-color: var(--card-bg) !important;
+  background-color: #d946ef !important;
+  background-color: #e879f9 !important;
+  background-color: var(--card-bg) !important;
+  background-color: rgba(6, 182, 212, 0.1) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--ctrl-hover-bg) !important;
+  background-color: rgba(23, 58, 100, 0.3) !important; /* Soft baby blue-navy backdrop shadow with blur */
+  background-color: #FFFFFF !important;
+  background-color: #CFEFFF !important;
+  background-color: #FFFFFF !important;
+  background-color: #F6E7D4 !important; /* soft cream */
+  background-color: #E8D8C3 !important; /* cafe */
+  background-color: #DDF3FF !important; /* Cloud base */
+  background-color: rgba(186, 217, 234, 0.15) !important;
+  background-color: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  background: var(--border-color) !important;
+  background: #CFEFFF !important;
+  background-color: #FFFFFF !important;
+  background-color: #DDF3FF !important;
+  background-color: var(--card-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: var(--grid-bg) !important;
+  background-color: rgba(236, 72, 153, 0.22) !important;
+  background-color: #111111 !important;
+  background-color: #1a0a22 !important;
+/* Modals overlays background dark tint override */
+  background-color: rgba(9, 5, 12, 0.85) !important;
+  background-color: #111111 !important;
+  background-image: none !important; /* Replaces golden trophy image */
+  background-color: #111111 !important;
+  background-color: #ec4899 !important;
+  background-color: #db2777 !important;
+  background-color: #111111 !important;
+  background-color: #1c0e22 !important;
+/* Base card backgrounds & modal */
+  background-color: #000000 !important;
+  background-color: #000000 !important;
+  background-image: none !important;
+  background-color: #000000 !important;
+  background-color: rgba(0, 255, 0, 0.12) !important;
+  background-color: #000000 !important;
+  background-color: #00ff00 !important;
+  0%, 100% { background-position: 0px 0px; }
+  10% { background-position: 10px 15px; }
+  30% { background-position: -20px -30px; }
+  50% { background-position: 50px 25px; }
+  70% { background-position: -40px 10px; }
+  90% { background-position: 25px -45px; }
+  background: linear-gradient(
+  background-size: 100% 4px, 6px 100%;
+  background-color: rgba(0, 0, 0, 0.88) !important;
+  background-color: #000000 !important;
+  background-color: #0a0a0a !important;
+  background-color: #050505 !important;
+  background-color: #000000 !important;
+  background-color: #00ff00 !important;
+  background-color: #1a1a1a !important;
+/* Global full screen override to purge any lingering beige background */
+  background-color: #030712 !important;
+  background-image: linear-gradient(135deg, #030712 0%, #090a0f 50%, #0b0f19 100%) !important;
+  background-color: transparent !important;
+  background: transparent !important;
+/* Base card backgrounds & modal */
+  background-color: #0c1020 !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  background-color: rgba(3, 7, 18, 0.8) !important;
+  background-color: #0f172a !important;
+  background-color: rgba(34, 211, 238, 0.15) !important;
+  background-color: #0c1020 !important;
+  background-color: #1e293b !important;
+  background-color: #0c1020 !important;
+  background-color: #0c1020 !important;
+  background-color: #1e293b !important;
+  background-color: transparent !important;
+  background-color: #0c1020 !important;
+  background-color: #0c1020 !important;
+  background-color: #020617 !important;
+  background-image: radial-gradient(circle at 50% 50%, #031c26 0%, #020f18 45%, #010408 100%) !important;
+  background-attachment: fixed !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  background-color: rgba(20, 184, 166, 0.18) !important;
+  background-color: #020617 !important;
+  background-color: #07192b !important;
+  background-color: rgba(2, 6, 23, 0.85) !important;
+  background-color: #020c1b !important;
+  background-color: #020617 !important;
+  background-color: #020c1b !important;
+    background-position: 0% 50%;
+    background-position: 100% 50%;
+    background-position: 0% 50%;
+────────────────────────────────────────────────────────────────────────────────
