@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export type ProfileId = 'easy' | 'medium' | 'hard';
 
 export interface PracticeProfile {
@@ -58,4 +57,3 @@ export function getProfile(id: ProfileId): PracticeProfile {
 }
 
 export const DEFAULT_PROFILE_ID: ProfileId = 'easy';
-────────────────────────────────────────────────────────────────────────────────

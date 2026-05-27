@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SpeedGrid Feedback Contract
 
 This document defines the authoritative behavior for gameplay feedback in SpeedGrid. All visual and tactile feedback must adhere to these isolation principles to prevent state drift and performance degradation.
@@ -40,4 +39,3 @@ This document defines the authoritative behavior for gameplay feedback in SpeedG
     - Overshoot results in a red line.
     - Path lines do not "stick" or loop.
     - Tiles remain responsive to new pointer interaction immediately after feedback triggers.
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React from 'react';
 import { MathMagicTile, MathMagicMode } from '../types';
 import { MousePointer2, Pointer } from 'lucide-react';
@@ -192,4 +191,3 @@ export const Tile = React.memo(({ tile, displayX, displayY, mode, isDragged, isD
     </div>
   );
 });
-────────────────────────────────────────────────────────────────────────────────

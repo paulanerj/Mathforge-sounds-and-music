@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SpeedGrid Baseline Constitution
 
 ## PROJECT STATE & KNOWN GOOD SYSTEMS
@@ -40,4 +39,3 @@ Before merging any new feature, verify the following:
 8. **Phase 8 — MathGrid Suite Integration** (CombineGrid alongside SpeedGrid)
 
 **NON-NEGOTIABLE:** Never casually rewrite working gravity or input systems without strict adherence to these contracts.
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Factor Help Button Design & State Contract
 
 ## 1. Factor Help Modes Designed
@@ -54,4 +53,3 @@ Place a small floating "Hint" or "Show Factors" pill button inline with or adjac
 *   **Phase 2B (Next)**: Implement the Factor Help button with visual-only temporary reveal. Add local React state for the timer. No reducer or spawn changes. No mode presets yet.
 *   **Phase 2C**: Introduce pedagogical mode presets in the settings to easily switch between "Beginner", "Intermediate", and "Advanced" visibility states.
 *   **Phase 3**: Audit factor scaffold board initialization and adjust spawn guarantees if target factors are missing.
-────────────────────────────────────────────────────────────────────────────────

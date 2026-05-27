@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import type { PracticeProfile } from './PracticeProfile';
 import { randomInt, randomShuffle } from './rng';
 
@@ -95,4 +94,3 @@ export function chainMatchesTarget(
 ): boolean {
   return evaluate(values, mode) === target;
 }
-────────────────────────────────────────────────────────────────────────────────

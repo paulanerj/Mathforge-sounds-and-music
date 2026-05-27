@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SpeedGrid Input Authority Contract
 
 ## CORE RULE
@@ -10,4 +9,3 @@
 - **No Move-After-Release:** The pointer-up or pointer-cancel event immediately terminates logic for that pointer.
 
 All moves require absolute point verification and bounding box matching. If a pointer leaks or acts without an active touch registration, it's a critical violation.
-────────────────────────────────────────────────────────────────────────────────

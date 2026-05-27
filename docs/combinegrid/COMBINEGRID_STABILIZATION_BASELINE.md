@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Stabilization Baseline (2026-05-11)
 
 This document serves as the authoritative baseline for CombineGrid. Any deviations from these rules or architectural patterns must be explicitly approved.
@@ -113,4 +112,3 @@ The round transition logic is simplified to a pure count of possible actions.
 
 ---
 *Status: STABILIZED (2026-05-11)*
-────────────────────────────────────────────────────────────────────────────────

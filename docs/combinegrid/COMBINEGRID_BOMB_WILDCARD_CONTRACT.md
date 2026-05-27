@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Bomb & Wildcard Contract
 
 This document defines the mathematical and visual contracts for special tiles in CombineGrid.
@@ -45,4 +44,3 @@ This document defines the mathematical and visual contracts for special tiles in
 
 ### 2.4 Undo Restore Rule
 - Undo after a wildcard combine must restore both the wildcard and the original companion tile to their exact prior positions and values.
-────────────────────────────────────────────────────────────────────────────────

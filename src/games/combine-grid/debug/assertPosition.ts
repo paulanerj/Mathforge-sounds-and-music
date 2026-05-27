@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { GridPos } from '../../../engine/grid/GridTypes';
 
 export function assertPosition(
@@ -33,4 +32,3 @@ export function assertPositions(
   if (!list) return;
   list.forEach((p, i) => assertPosition(p, board, `${label}[${i}]`));
 }
-────────────────────────────────────────────────────────────────────────────────

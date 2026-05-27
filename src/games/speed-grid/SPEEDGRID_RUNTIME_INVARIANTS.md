@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID RUNTIME INVARIANTS
 
 These conditions must ALWAYS be true during the `PLAY` phase.
@@ -20,4 +19,3 @@ These conditions must ALWAYS be true during the `PLAY` phase.
 ## 4. SETTINGS INVARIANTS
 - **Apply Lock**: Active gameplay settings remain constant except during an `APPLY_SETTINGS` or `RESTART` action.
 - **Dev Mode Isolation**: Diagnostic tracers (e.g., `lastGravityTrace`) must be null/empty when `devMode` or `diagnosticMode` is disabled.
-────────────────────────────────────────────────────────────────────────────────

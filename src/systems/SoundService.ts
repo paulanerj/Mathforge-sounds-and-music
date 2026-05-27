@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export class SoundService {
   private static ctx: AudioContext | null = null;
   private static masterGain: GainNode | null = null;
@@ -681,4 +680,3 @@ export class SoundService {
     };
   }
 }
-────────────────────────────────────────────────────────────────────────────────

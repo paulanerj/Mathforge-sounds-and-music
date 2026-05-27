@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID STABILIZATION BASELINE
 
 ## 1. Current Stable Systems
@@ -80,4 +79,3 @@ This baseline defines the visual polish applied to standard SpeedGrid UI.
 - **Round End UI:** The result splash only displays a numerical "Next Target" if the target was advanced via a successful clearance (`lastActionName === "RESOLVE_SUCCESS"`). Otherwise, it displays "RETRY ROUND".
 - **State Preservation:** Transitions like `START_NEXT_ROUND` (Continue) preserve the existing `state.target` and use it to initialize the next board correctly.
 - **Debug Trace:** A dev-mode 'COPY TARGET DEBUG' trace provides full visibility into the target state sequence.
-────────────────────────────────────────────────────────────────────────────────

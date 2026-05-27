@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { PracticeProfile } from '../../engine/PracticeProfile';
 import { ROWS, COLS, BOMB_TILE_VALUE } from './constants';
 import type { EvalMode, GameMode } from './types';
@@ -323,4 +322,3 @@ export function initGame(
   });
   return { ...state, version: 1 };
 }
-────────────────────────────────────────────────────────────────────────────────

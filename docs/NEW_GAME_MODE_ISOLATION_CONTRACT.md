@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # NEW GAME MODE ISOLATION CONTRACT
 
 This contract dictates the architectural requirements for introducing any additional game mode to the MathGrid ecosystem. 
@@ -31,4 +30,3 @@ If a shared system change is explicitly authorized and mandated, the developer M
 
 ## 7. Mandatory Inclusion
 * Any newly added game mode MUST include its own dedicated regression checklist appended to or mimicking `MATHGRID_PRE_NEW_MODE_REGRESSION_CHECKLIST.md`.
-────────────────────────────────────────────────────────────────────────────────

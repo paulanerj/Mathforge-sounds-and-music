@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # COMBINEGRID RESULT SPLASH CONTRACT
 
 ## OBJECTIVE
@@ -37,4 +36,3 @@ Ensure the result splash (SummaryScreen) always appears at the end of a CombineG
 - **Version Mismatch**: Reducer must NOT reject `FINISH_COUNTING` if dispatched from the effect with an older version token, as the counting process itself increments the version.
 - **Empty Trophies**: If no trophies exist, `FINISH_COUNTING` is dispatched immediately.
 - **Stuck State**: Fallback timer ensures the player is never trapped looking at a finished board with no UI.
-────────────────────────────────────────────────────────────────────────────────

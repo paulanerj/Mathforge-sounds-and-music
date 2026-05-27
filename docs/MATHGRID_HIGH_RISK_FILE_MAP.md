@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID HIGH RISK FILE MAP
 
 This map identifies the most vulnerable files in the MathGrid suite and the systems they put at risk if modified without rigorous validation.
@@ -68,4 +67,3 @@ This map identifies the most vulnerable files in the MathGrid suite and the syst
   - **Why:** Global Tailwind entry point and root variable overrides.
   - **Risk:** Disruption to glass effects, touch-action blockages, scrolling suppression failures.
   - **Checks:** Scroll suppression across environments, layout bounds.
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { Component, ErrorInfo } from 'react';
 
 interface Props {
@@ -101,4 +100,3 @@ export class GameErrorBoundary extends Component<Props, State> {
     return this.props.children;
   }
 }
-────────────────────────────────────────────────────────────────────────────────

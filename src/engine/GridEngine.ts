@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import type { SpawnedTile } from './SpawnEngine';
 
 export function createGrid(
@@ -131,4 +130,3 @@ export function productPositions(
 ): number {
   return positions.reduce((acc, p) => acc * getCellValue(grid, p.row, p.col), 1);
 }
-────────────────────────────────────────────────────────────────────────────────

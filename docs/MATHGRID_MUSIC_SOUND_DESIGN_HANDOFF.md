@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MathGrid Music & Sound Design Handoff
 
 ## 1. Project Overview
@@ -55,4 +54,3 @@
 - SpeedGrid compatibility must be preserved.
 - Sounds must be added as game-specific methods where possible to avoid conflicts.
 - No gameplay logic changes can be made by audio layers.
-────────────────────────────────────────────────────────────────────────────────

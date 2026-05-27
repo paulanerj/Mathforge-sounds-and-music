@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useMemo, useState, useEffect } from "react";
 import { getFactorRecipes } from "../services/FactorMath";
 
@@ -55,4 +54,3 @@ export const FactorRecipeList: React.FC<FactorRecipeListProps> = ({
     </div>
   );
 };
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { applyGravity as engineApplyGravity } from '../engine/GridEngine';
 import type { GravityResult as EngineGravityResult } from '../engine/GridEngine';
 
@@ -95,4 +94,3 @@ export function clearAndGravity(
   );
   return applyGravity(cleared, rows, cols, spawnValue, spawnBonus);
 }
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export function getFactors(target: number): number[] {
   if (target <= 1) return [];
   const factors: Set<number> = new Set();
@@ -79,4 +78,3 @@ export function getFactorRecipes(target: number): number[][] {
   
   return uniqueRecipes;
 }
-────────────────────────────────────────────────────────────────────────────────

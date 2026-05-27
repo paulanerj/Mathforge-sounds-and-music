@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import type { TelemetryEvent } from "./TelemetryTypes";
 
 export class TelemetryRecorder {
@@ -16,4 +15,3 @@ export class TelemetryRecorder {
     this.events = [];
   }
 }
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { MathMagicTile, MathMagicMode, MathMagicTheme } from '../types';
@@ -62,4 +61,3 @@ export const InteractionGhost = React.memo(({ tile, mode, theme, ghostRef }: Int
     document.body
   );
 });
-────────────────────────────────────────────────────────────────────────────────

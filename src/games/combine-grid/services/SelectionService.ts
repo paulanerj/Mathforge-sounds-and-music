@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { GridPos } from '../types';
 
 export function toggleTile(current: GridPos[], pos: GridPos): GridPos[] {
@@ -14,4 +13,3 @@ export function isSelected(selection: GridPos[], pos: GridPos): boolean {
 export function selectionIndex(selection: GridPos[], pos: GridPos): number {
   return selection.findIndex((p) => p && p.row === pos.row && p.col === pos.col);
 }
-────────────────────────────────────────────────────────────────────────────────

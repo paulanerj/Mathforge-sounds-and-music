@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export interface EngineSession {
   score: number;
   bestScore: number;
@@ -36,4 +35,3 @@ export function incrementRound(session: EngineSession): EngineSession {
 export function elapsedMs(session: EngineSession, now: number = Date.now()): number {
   return Math.max(0, now - session.startedAt);
 }
-────────────────────────────────────────────────────────────────────────────────

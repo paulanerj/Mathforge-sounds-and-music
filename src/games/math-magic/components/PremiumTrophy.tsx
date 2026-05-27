@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React from 'react';
 import { TrophyPalette, THEME_PALETTES } from '../types';
 
@@ -61,4 +60,3 @@ export const PremiumTrophy = React.memo(({ themeName, value }: PremiumTrophyProp
     </div>
   );
 });
-────────────────────────────────────────────────────────────────────────────────

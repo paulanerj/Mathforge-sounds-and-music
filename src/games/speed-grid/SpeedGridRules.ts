@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 /*
   SPEEDGRID_OVERSHOOT_CONTRACT
 
@@ -2437,4 +2436,3 @@ export function runSpeedGridIntegrityCheck(state: SpeedGridState): {
 
   return checks;
 }
-────────────────────────────────────────────────────────────────────────────────

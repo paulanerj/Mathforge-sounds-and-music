@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID FUNDAMENTAL GAMEPLAY CONTRACT
 
 ## 1. Global No-Drift Principles
@@ -53,4 +52,3 @@ Run the [MATHGRID REQUIRED REGRESSION CHECKLIST](./MATHGRID_REQUIRED_REGRESSION_
 
 ## 8. Emergency Rollback / Branch Guidance
 Should critical regressions be identified, revert cleanly rather than applying compound "band-aids". Ensure structural issues are separated from rendering bugs, referring directly to the locked contracts in `docs/combinegrid/` and `docs/speedgrid/`.
-────────────────────────────────────────────────────────────────────────────────

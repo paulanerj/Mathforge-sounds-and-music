@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export class HapticService {
   static trigger(hapticsEnabled: boolean, pattern: number | number[]) {
     if (!hapticsEnabled) return;
@@ -73,4 +72,3 @@ export class HapticService {
     this.trigger(enabled, [30, 50, 30, 50, 100]);
   }
 }
-────────────────────────────────────────────────────────────────────────────────

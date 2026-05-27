@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { memo } from 'react';
 import { CelestialVFX } from './vfx/CelestialVFX';
 import { ForgeVFX } from './vfx/ForgeVFX';
@@ -64,4 +63,3 @@ export const VFXOverlay = memo(
     return prevProps.activeTheme === nextProps.activeTheme && prevProps.vfxQuality === nextProps.vfxQuality;
   }
 );
-────────────────────────────────────────────────────────────────────────────────

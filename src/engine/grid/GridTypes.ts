@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export interface GridPos {
   row: number;
   col: number;
@@ -11,4 +10,3 @@ export interface BaseGridState {
   selection: GridPos[];
   seed: number;
 }
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useReducer, useEffect, useRef, useCallback, useState } from 'react';
 import { mmReducer, initialMathMagicState } from './mmReducer';
 import { MathMagicMode, MathMagicPhase, MathMagicTile, getModeThreshold } from './types';
@@ -977,4 +976,3 @@ export default function MathMagicGame({ onBack }: { onBack?: () => void }) {
     </div>
   );
 }
-────────────────────────────────────────────────────────────────────────────────

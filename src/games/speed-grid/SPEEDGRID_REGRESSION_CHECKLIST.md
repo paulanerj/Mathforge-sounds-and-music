@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID REGRESSION CHECKLIST
 
 Perform this audit after ANY change to the Reducer, Input Layer, or Tile Components.
@@ -28,4 +27,3 @@ Perform this audit after ANY change to the Reducer, Input Layer, or Tile Compone
 - [ ] **Smooth FPS**: No dropped frames during large gravity collapses or particle bursts.
 - [ ] **Scale Feedback**: Tiles slightly compress (`0.97`) on touch and spring back on release.
 - [ ] **Liquid Trail**: Canvas trail is smooth, uses curves, and follows the finger with minimal jitter.
-────────────────────────────────────────────────────────────────────────────────

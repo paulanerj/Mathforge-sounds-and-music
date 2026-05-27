@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export function assertEngineBoundary(): void {}
 
 export function assertSpawnIntentCount(requested: number, provided: number): void {
@@ -35,4 +34,3 @@ export function assertNoSystemLeak(gameName: string): void {
     }
   }
 }
-────────────────────────────────────────────────────────────────────────────────

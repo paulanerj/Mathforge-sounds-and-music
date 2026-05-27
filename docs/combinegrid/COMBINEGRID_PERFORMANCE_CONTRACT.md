@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Performance Contract
 
 This document defines the performance constraints for CombineGrid to ensure smooth execution on mobile devices (e.g., iPhone 12 baseline).
@@ -46,4 +45,3 @@ This document defines the performance constraints for CombineGrid to ensure smoo
 ## 4. Verification Requirements
 - Any performance-sensitive edit requires a build pass and a mobile layout smoke test.
 - Check for "Console Spam": Noisy input/trace logs must be gated behind `process.env.NODE_ENV !== 'production'`.
-────────────────────────────────────────────────────────────────────────────────

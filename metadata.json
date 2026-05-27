@@ -1,8 +1,6 @@
-────────────────────────────────────────────────────────────────────────────────
 {
   "name": "Mathgrid-TableAddOn",
   "description": "A fast-paced, multi-touch math grid game where you path unique tiles to reach target sums.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
-────────────────────────────────────────────────────────────────────────────────

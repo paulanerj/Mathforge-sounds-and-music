@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export interface ChainPos {
   row: number;
   col: number;
@@ -80,4 +79,3 @@ export function isChainReadyToEvaluate(
 ): boolean {
   return !state.isActive && state.positions.length >= minLength;
 }
-────────────────────────────────────────────────────────────────────────────────

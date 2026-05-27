@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React from 'react';
 import { BASE_RADIUS_PX, PAD, COLORS, SHADOWS } from '../uiTokens';
 import { ZERO_TILE_VALUE, BOMB_TILE_VALUE, WILDCARD_ANIM } from '../constants';
@@ -395,4 +394,3 @@ export const Tile = React.memo(function Tile({
 });
 
 export default Tile;
-────────────────────────────────────────────────────────────────────────────────

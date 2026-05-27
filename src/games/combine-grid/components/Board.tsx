@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React from 'react';
 import { Tile } from './Tile';
 import { GridPos } from '../types';
@@ -241,4 +240,3 @@ const Board = React.memo(function Board({
 });
 
 export default Board;
-────────────────────────────────────────────────────────────────────────────────

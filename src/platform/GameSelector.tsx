@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useState, useEffect } from "react";
 import CombineGridGame from "../games/combine-grid/CombineGridGame";
 import SpeedGridGame from "../games/speed-grid/SpeedGridGame";
@@ -113,4 +112,3 @@ export default function GameSelector() {
     </div>
   );
 }
-────────────────────────────────────────────────────────────────────────────────

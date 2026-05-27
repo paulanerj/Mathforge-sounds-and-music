@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID TIMER AND STALE CALLBACK CONTRACT
 
 ## Contract Scope
@@ -25,4 +24,3 @@ This document outlines safely tracking, executing, and purging timers within the
 
 ## 6. Debug Accountability
 - The current debugging layout trace (`JSON` debug outputs) must transparently surface the count of active timers where accessible, aiding directly in memory-leak evaluations.
-────────────────────────────────────────────────────────────────────────────────

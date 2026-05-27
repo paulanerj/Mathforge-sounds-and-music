@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MathGrid Regression Checklist
 
 Use this checklist to verify the stability of SpeedGrid and CombineGrid after any change to shared systems or localized polish.
@@ -59,4 +58,3 @@ Use this checklist to verify the stability of SpeedGrid and CombineGrid after an
 
 ---
 *Last Updated: 2026-05-11*
-────────────────────────────────────────────────────────────────────────────────

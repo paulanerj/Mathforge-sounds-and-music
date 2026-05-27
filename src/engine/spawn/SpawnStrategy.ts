@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { TargetCategory } from '../SpawnEngine';
 
 export type SpawnRequest = {
@@ -15,4 +14,3 @@ export type SpawnResponse = {
 export interface SpawnStrategy {
   generate(request: SpawnRequest): SpawnResponse;
 }
-────────────────────────────────────────────────────────────────────────────────

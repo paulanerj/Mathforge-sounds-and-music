@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export const BOARD_WIDTH_PCT = 1.0; 
 export const SIDE_MARGIN_PCT = 0.0; 
 export const BOARD_MAX_WIDTH = 800;
@@ -18,4 +17,3 @@ export const COLORS = {
   buttonShadow: '#B8A888',
   iconColor: '#5D4037',
 };
-────────────────────────────────────────────────────────────────────────────────

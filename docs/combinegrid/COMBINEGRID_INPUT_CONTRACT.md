@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Input Contract
 
 This document defines the authoritative behavior for user interaction in CombineGrid. No implementation pass may alter these rules without explicit regression testing and updated documentation.
@@ -76,4 +75,3 @@ To prevent race conditions and "ghost merges" from delayed timers:
 - **Verification:** Before dispatching a mutation after a delay (e.g. `DRAG_DROP` after wildcard vibrate), the action must include the captured version.
 - **Reducer Rejection:** The reducer must verify that the incoming action version exactly matches the current state version. If it mismatches, the action is rejected as "stale," preventing it from mutating a board that has already changed or advanced.
 - **Timer Purge:** All timers must be actively tracked inside `activeTimers` set and cleared upon component unmount or when their respective interaction is explicitly cancelled.
-────────────────────────────────────────────────────────────────────────────────

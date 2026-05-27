@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID REQUIRED REGRESSION CHECKLIST
 
 This checklist MUST be executed manually or programmatically after any implementation pass.
@@ -36,4 +35,3 @@ This checklist MUST be executed manually or programmatically after any implement
 - [ ] NO blocking debug features utilizing `alert()` logic remains compiled.
 - [ ] Console remains clean, demonstrating an absence of uncontrolled interval or cyclic debug spam.
 - [ ] NO timer references or intervals exhibit unbounded memory augmentation across lifecycles.
-────────────────────────────────────────────────────────────────────────────────

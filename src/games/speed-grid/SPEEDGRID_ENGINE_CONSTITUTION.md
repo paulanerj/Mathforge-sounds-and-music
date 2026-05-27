@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID ENGINE CONSTITUTION
 
 **Version:** 1.0 (Freeze Phase)
@@ -25,4 +24,3 @@ This Constitution establishes the supreme laws governing the SpeedGrid game engi
 
 ## 5. REVISION PROCESS
 This constitution is in **FREEZE MODE**. Any attempt to redesign core systems must be preceded by a formal amendment to this document and a full system impact audit.
-────────────────────────────────────────────────────────────────────────────────

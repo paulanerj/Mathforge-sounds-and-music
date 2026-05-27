@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Regression Matrix
 
 | Test Case | Interaction | Target | Initial Board | Action | Expected Result | Result State |
@@ -162,4 +161,3 @@
 | **Sound Bomb Fuse Cleanup** | Sound | Any | Explode / Undo / Restart | Fuse Stops | Checked | Bomb fuse does not continue indefinitely. Tracked via `bombFuseNodes`. |
 | **Safe Bomb Explosion** | Sound | Bomb | Boom | Crack+Thud | Checked | Uses modified gains (0.35/0.2) instead of handoff clipping (1.5). |
 | **SpeedGrid Compatibility** | Sound | SpeedGrid | Any Move | Uses old ticks | Preserved | Shared `SoundService.ts` changes do not break or rename SpeedGrid methods. |
-────────────────────────────────────────────────────────────────────────────────

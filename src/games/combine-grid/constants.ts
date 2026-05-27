@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export const ROWS = 7;
 export const COLS = 5;
 export const ROUNDS_PER_SESSION = 5;
@@ -42,4 +41,3 @@ export const WILDCARD_ANIM = {
   GROW_BASE: 1,
   GROW_MULT: 0.15,
 };
-────────────────────────────────────────────────────────────────────────────────

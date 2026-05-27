@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { useReducer, useEffect, useRef, useCallback, useState } from 'react';
 import { mmReducer, initialMathMagicState } from '../mmReducer';
 import { MathMagicMode, MathMagicPhase, MathMagicTile } from '../types';
@@ -724,4 +723,3 @@ export function useGameEngine() {
     handleSuccessCombo
   };
 }
-────────────────────────────────────────────────────────────────────────────────

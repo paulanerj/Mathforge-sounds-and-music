@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID TILE CONTRACTS
 
 This document defines the properties and behaviors of the two primary tile entities.
@@ -22,4 +21,3 @@ A specialized utility tile that adds life to the game.
 - **Removal**: Bursts into particles and adds `timeBonus` to `timeLeft` upon collection.
 - **Forbidden**: Must never be used as an operand in gameplay equations.
 - **Lifecycle**: Spawns randomly based on `TargetProfile` weighting.
-────────────────────────────────────────────────────────────────────────────────

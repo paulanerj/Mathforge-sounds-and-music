@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export function applyBonusMaskGravity(
   oldMask: boolean[][],
   preGravGrid: number[][],
@@ -50,4 +49,3 @@ function _computeBonusMask(
 
   return newMask;
 }
-────────────────────────────────────────────────────────────────────────────────

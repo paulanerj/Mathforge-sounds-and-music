@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID BASELINE LOCK 2026-05-11
 
 ## 1. Current Protected Baseline Summary
@@ -59,4 +58,3 @@ This document serves as the absolute baseline snapshot for MathGrid (comprising 
 * **Archive Date:** 2026-05-11
 * **Purpose:** Solidifying a working restore point before the introduction of a new game mode.
 * **Warning:** Do not overwrite casually. This source-of-truth snapshot is a known-good configuration.
-────────────────────────────────────────────────────────────────────────────────

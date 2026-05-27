@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { SpawnStrategy, SpawnRequest, SpawnResponse } from '../../engine/spawn/SpawnStrategy';
 import { TargetCategory, getCategorySequence } from '../../engine/SpawnEngine';
 
@@ -43,4 +42,3 @@ export class CombineGridSpawnStrategy implements SpawnStrategy {
     };
   }
 }
-────────────────────────────────────────────────────────────────────────────────

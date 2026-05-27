@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export type MathMagicTheme = 'monument' | 'iron-forge' | 'stage-dive' | 'cinnamoroll' | 'kuromi' | 'glitch-wave' | 'celestial-orbit' | 'deep-sea';
 export type VFXQuality = 'high' | 'low' | 'off';
 
@@ -128,4 +127,3 @@ export type MathMagicAction =
   | { type: 'ERROR_COMBO_RESET' }
   | { type: 'CLEAR_QUADRANT'; qKey: string; timestamp: number }
   | { type: 'REBUILD_GRID'; config: MathMagicConfig; mode: MathMagicMode; tiles: MathMagicTile[] };
-────────────────────────────────────────────────────────────────────────────────

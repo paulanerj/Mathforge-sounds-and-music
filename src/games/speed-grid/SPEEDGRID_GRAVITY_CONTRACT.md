@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID GRAVITY CONTRACT
 
 ## 1. THE VERTICAL MANDATE
@@ -26,4 +25,3 @@ The top of every column is filled with new tiles.
 - **Horizontal Refill**: Tiles must never enter from the sides.
 - **Teleporting**: Tiles must have a smooth Y-translation.
 - **Layout Jitter**: Toggling gravity visuals must not move logical board elements.
-────────────────────────────────────────────────────────────────────────────────

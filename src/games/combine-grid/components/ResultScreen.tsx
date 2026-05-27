@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React from 'react';
 import { motion } from 'motion/react';
 
@@ -159,4 +158,3 @@ function ActionButton({ label, onClick, primary = false }: { label: string; onCl
     </motion.button>
   );
 }
-────────────────────────────────────────────────────────────────────────────────

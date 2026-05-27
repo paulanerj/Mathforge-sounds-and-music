@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID INPUT AUTHORITY
 
 ## 1. EVENT CHAIN
@@ -23,4 +22,3 @@ No input action is valid unless tied to a specific, unique `pointerId` currently
 - **OOB**: Any move outside the defined `rows/cols` grid boundary is ignored.
 - **Diagonal Skip**: Moves that jump over a tile diagonally without touching it are filled via interpolation.
 - **Hover**: Pointer moves without an active `PointerDown` state (hovering) must produce no state change.
-────────────────────────────────────────────────────────────────────────────────

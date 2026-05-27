@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import type { FallingTile, SpawnedPosition } from './GravitySystem';
 
 export type SpawnStyle = 'fall-in' | 'pop' | 'instant';
@@ -93,4 +92,3 @@ export function gravityAnimTotalMs(frames: GravityAnimFrame[]): number {
   if (frames.length === 0) return 0;
   return Math.max(...frames.map((f) => f.delayMs + f.durationMs));
 }
-────────────────────────────────────────────────────────────────────────────────

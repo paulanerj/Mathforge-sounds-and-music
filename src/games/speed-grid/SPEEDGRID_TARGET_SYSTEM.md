@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID TARGET SYSTEM
 
 ## 1. TARGET GENERATION MODES
@@ -41,4 +40,3 @@ The system maintains a `targetHistory[]` buffer:
 - **Navigation**: The bottom HUD navigation allows "Backtracking" through the session's targets.
 - **Integrity**: Navigating history does NOT regenerate the board, allowing players to revisit unsolved boards with different targets.
 - **Buffer**: History is limited to the last 20 targets.
-────────────────────────────────────────────────────────────────────────────────

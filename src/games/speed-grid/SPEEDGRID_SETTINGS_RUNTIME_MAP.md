@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID SETTINGS RUNTIME MAP
 
 ## 1. SETTINGS AUTHORITY MODEL
@@ -34,4 +33,3 @@ If a setting requiring **BOARD REGEN** is committed, the Reducer must:
 ## 4. FORBIDDEN ACTIONS
 - **Silent Mutation**: No setting may be changed without an explicit user action (APPLY/RESTART).
 - **Inconsistent Regen**: Any setting change affecting the number distribution (e.g., `numberPool`) MUST trigger a fresh board fill to maintain mathematical integrity.
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SpeedGrid Sound Contract
 
 This document defines the audio identity and performance constraints for SpeedGrid.
@@ -35,4 +34,3 @@ This document defines the audio identity and performance constraints for SpeedGr
 - Cross-game smoke test is mandatory after `SoundService` modifications.
 - Verify SpeedGrid sounds do not bleed into CombineGrid silent modes.
 - Build pass required.
-────────────────────────────────────────────────────────────────────────────────

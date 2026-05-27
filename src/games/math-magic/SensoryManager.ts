@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { HapticService } from '../../systems/HapticService';
 
 export enum SensoryEvent {
@@ -265,4 +264,3 @@ class SensoryManagerClass {
 }
 
 export const SensoryManager = new SensoryManagerClass();
-────────────────────────────────────────────────────────────────────────────────

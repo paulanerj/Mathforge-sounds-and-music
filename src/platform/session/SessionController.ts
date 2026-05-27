@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { TelemetryRecorder } from "./TelemetryRecorder";
 
 export class SessionController {
@@ -86,4 +85,3 @@ export class SessionController {
     this.telemetry.reset();
   }
 }
-────────────────────────────────────────────────────────────────────────────────

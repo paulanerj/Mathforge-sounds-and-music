@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CHANGE PROTOCOL GUARDRAILS
 
 To prevent entropy and unmanageable code drift in MathGrid, the following strict guardrails govern all implementation passes.
@@ -100,4 +99,3 @@ Performance work must not change gameplay semantics.
 Before modifying SpeedGrid feedback or sound systems, coder must read the matching SpeedGrid contract document:
 * `docs/speedgrid/SPEEDGRID_FEEDBACK_CONTRACT.md`
 * `docs/speedgrid/SPEEDGRID_SOUND_CONTRACT.md`
-────────────────────────────────────────────────────────────────────────────────

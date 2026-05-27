@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useState, useEffect } from 'react';
 import { MathMagicState, MathMagicMode } from '../types';
 import { SensoryManager, SensoryEvent } from '../SensoryManager';
@@ -208,4 +207,3 @@ export const MathMagicModal = ({ state, onResolve, onClose }: MathMagicModalProp
     </div>
   );
 };
-────────────────────────────────────────────────────────────────────────────────

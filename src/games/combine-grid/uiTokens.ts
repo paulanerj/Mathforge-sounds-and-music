@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export const SAFE_MARGIN = 5;
 export const BORDER_WIDTH = 5;
 export const GAP = 2;
@@ -30,4 +29,3 @@ export const SHADOWS = {
   trophy: '0 6px 12px rgba(255,200,0,0.2), inset 0 -2px 4px rgba(0,0,0,0.1), inset 0 2px 4px rgba(255,255,255,0.5)',
   frozen: '0 4px 8px rgba(160,200,230,0.2), inset 0 -2px 4px rgba(0,0,0,0.1), inset 0 2px 4px rgba(255,255,255,0.4)',
 };
-────────────────────────────────────────────────────────────────────────────────

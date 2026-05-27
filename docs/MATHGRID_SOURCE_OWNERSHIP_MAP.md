@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID SOURCE OWNERSHIP MAP
 
 This document tracks the explicit ownership boundaries of files across the MathGrid project. To prevent regression, code modification must respect these boundaries.
@@ -47,4 +46,3 @@ This document tracks the explicit ownership boundaries of files across the MathG
 ### Other Shared Systems (e.g., `src/systems/*`, `src/platform/*`)
 * **Used by:** SpeedGrid, CombineGrid
 * **Constraint:** Requires cross-game smoke test if changed. Code modifications must not break UI rendering or game lifecycle.
-────────────────────────────────────────────────────────────────────────────────

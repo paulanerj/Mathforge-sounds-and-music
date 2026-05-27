@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export type VFXEventType = 'TILE_SOLVED' | 'GAME_VICTORY';
 
 export const emitVFXEvent = (eventType: VFXEventType, payload?: any) => {
@@ -13,4 +12,3 @@ export const subscribeToVFXEvent = (eventType: VFXEventType, callback: (payload:
   window.addEventListener(`MATH_MAGIC_${eventType}`, handler);
   return () => window.removeEventListener(`MATH_MAGIC_${eventType}`, handler);
 };
-────────────────────────────────────────────────────────────────────────────────

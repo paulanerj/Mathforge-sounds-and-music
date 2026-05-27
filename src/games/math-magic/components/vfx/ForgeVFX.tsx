@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useMemo, useState, useEffect } from 'react';
 import { VFXQuality } from '../../types';
 import { subscribeToVFXEvent } from './VFXEventBus';
@@ -600,4 +599,3 @@ export const ForgeVFX = ({ quality }: ForgeVFXProps) => {
     </div>
   );
 };
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Factor Guidance Contract
 
 ## Overview
@@ -69,4 +68,3 @@ Indicators must remain visually distinct from existing cues (e.g., success, sele
 
 - **Factor Help Group**: Settings menu now includes a "Factor Help" section.
 - **Redux/Engine Bypass**: Toggling settings works reactively via props and does not enforce a board regeneration or a reducer state modification.
-────────────────────────────────────────────────────────────────────────────────

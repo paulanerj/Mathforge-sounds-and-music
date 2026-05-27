@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID SYSTEM BOUNDARIES
 
 ## 1. THE REDUCER BOUNDARY
@@ -29,4 +28,3 @@ The Settings System is **Dual-Staged**.
 1. **Draft Stage**: User interacts with `draftSettings`. High-frequency UI updates. No gameplay impact.
 2. **Commit Stage**: `APPLY_SETTINGS` action. Commits `draftSettings` to `activeSettings`.
 3. **Runtime consumption**: Systems observe `activeSettings` ONLY. Silent live-mutations to active settings are strictly forbidden.
-────────────────────────────────────────────────────────────────────────────────

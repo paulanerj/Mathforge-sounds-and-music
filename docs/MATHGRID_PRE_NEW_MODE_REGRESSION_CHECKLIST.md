@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID PRE-NEW-MODE REGRESSION CHECKLIST
 
 Before merging or approving any modifications that introduce a new game mode, this entire manual checklist must be validated to protect existing game variants from cross-contamination.
@@ -34,4 +33,3 @@ Before merging or approving any modifications that introduce a new game mode, th
 - [ ] **Non-Adjacent Reject:** Dragging non-adjacent tiles rejects cleanly with blocked feedback. [NEW]
 - [ ] **Pointer Cancel Safety:** Losing pointer focus or cancel event mid-drag recovers state safely without stale ghosts. [NEW]
 - [ ] **Reducer Defense:** Reducer ignores invalid position payloads instead of crashing. [NEW]
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Effects & Sound Implementation Plan
 
 This document outlines the phased implementation plan for the final CombineGrid visual and audio polish features, ensuring stability and preventing drift in core logic.
@@ -89,4 +88,3 @@ During the endgame count-up:
 
 **Phase 7: Hyper-polish pass** (DEFERRED)
 - Full Monument Valley-style synthetic soundscape across all events replacing the Web Audio oscillator stubs.
-────────────────────────────────────────────────────────────────────────────────

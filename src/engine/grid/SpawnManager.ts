@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { TargetCategory } from '../SpawnEngine';
 import { assertSpawnIntentCount } from '../ENGINE_CONTRACT';
 
@@ -88,4 +87,3 @@ export function drawBatchFromEngine(
     log: resultLog
   };
 }
-────────────────────────────────────────────────────────────────────────────────

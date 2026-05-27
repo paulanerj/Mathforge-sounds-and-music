@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useMemo, useState, useEffect } from 'react';
 import { VFXQuality } from '../../types';
 import { subscribeToVFXEvent } from './VFXEventBus';
@@ -289,4 +288,3 @@ export const MonumentVFX = ({ quality }: MonumentVFXProps) => {
     </div>
   );
 };
-────────────────────────────────────────────────────────────────────────────────

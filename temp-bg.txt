@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
     background: #0f172a; /* Deep Slate */
     background-image: 
     background-color: #0f172a;
@@ -152,4 +151,3 @@
     background-position: 0% 50%;
     background-position: 100% 50%;
     background-position: 0% 50%;
-────────────────────────────────────────────────────────────────────────────────

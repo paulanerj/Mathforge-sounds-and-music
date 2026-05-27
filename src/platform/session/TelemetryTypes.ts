@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export type TelemetryEvent =
   | { type: "session_start"; game: string; ts: number }
   | { type: "session_end"; game: string; ts: number; duration: number; moves: number; actions: number }
@@ -7,4 +6,3 @@ export type TelemetryEvent =
   | { type: "move_invalid"; game: string; ts: number; moveType: string }
   | { type: "trophy"; game: string; ts: number; value: number }
   | { type: "restart"; game: string; ts: number };
-────────────────────────────────────────────────────────────────────────────────

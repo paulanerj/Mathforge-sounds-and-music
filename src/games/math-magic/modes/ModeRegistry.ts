@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { MathMagicStrategy, ValidationPayload } from './MathMagicStrategy';
 import { MathMagicState, MathMagicMode, MathMagicTile } from '../types';
 import { MathMagicRules } from '../MathMagicRules';
@@ -278,4 +277,3 @@ export const ModeRegistry: Record<MathMagicMode, MathMagicModeDefinition> = {
   [MathMagicMode.ADDITION_FINDER]: new AdditionFinderMode(),
   [MathMagicMode.PATTERN_SWEEPER]: new PatternSweeperMode(),
 };
-────────────────────────────────────────────────────────────────────────────────

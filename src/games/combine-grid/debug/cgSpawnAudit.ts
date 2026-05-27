@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { TargetProfile, TargetCategory } from '../../../engine/SpawnEngine';
 import { ZERO_TILE_VALUE } from '../constants';
 
@@ -151,4 +150,3 @@ export function runInitialSpawnAudit(target: number, profile: any): SpawnAuditRe
   enforceSpawnQuality(report, profile);
   return report;
 }
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useState, useEffect } from 'react';
 import { MathMagicConfig, MathMagicMode, MathMagicState } from '../types';
 import { MathMagicRules } from '../MathMagicRules';
@@ -270,4 +269,3 @@ export const MathMagicSettings = ({ state, onClose, onApply, activeTheme, onThem
     </div>
   );
 };
-────────────────────────────────────────────────────────────────────────────────

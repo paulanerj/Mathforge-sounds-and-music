@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
@@ -47,4 +46,3 @@ export const EquationPill: React.FC<EquationPillProps> = ({
     </motion.div>
   );
 };
-────────────────────────────────────────────────────────────────────────────────

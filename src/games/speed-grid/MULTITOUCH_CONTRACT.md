@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SpeedGrid Multi-Touch Contract
 
 ## CORE RULE
@@ -22,4 +21,3 @@ When operating in Combined Mode (default multi-touch):
 - Resolves as **one shared successful selection**.
 
 If `tile.value == x`, and Pointer A and Pointer B both touch it, `x` is added to the shared total exactly once.
-────────────────────────────────────────────────────────────────────────────────

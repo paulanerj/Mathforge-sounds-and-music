@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID DEBUG STATE REQUIREMENTS
 
 ## Specification Scope
@@ -32,4 +31,3 @@ A verified CombineGrid JSON debug dump must include:
 - **Trophy Count**: Trackable progression sum resolving meta progress visually.
 - **Result Screen Visible**: Concrete Boolean tracking actual endgame validation component visibility.
 - **Last 30 Actions**: Bounded historic tracking for action playback assessment.
-────────────────────────────────────────────────────────────────────────────────

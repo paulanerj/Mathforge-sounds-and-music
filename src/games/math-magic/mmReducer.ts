@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { MathMagicState, MathMagicAction, MathMagicPhase, MathMagicMode, MathMagicTile } from './types';
 import { StorageService } from './StorageService';
 import { ModeRegistry } from './modes/ModeRegistry';
@@ -371,5 +370,3 @@ export function mmReducer(state: MathMagicState, action: MathMagicAction): MathM
       return state;
   }
 }
-
-────────────────────────────────────────────────────────────────────────────────

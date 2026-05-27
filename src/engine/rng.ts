@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export function makePrng(seed: number): () => number {
   let s = seed | 0;
   return function (): number {
@@ -39,4 +38,3 @@ export function randomShuffle<T>(prng: () => number, arr: readonly T[]): T[] {
   }
   return result;
 }
-────────────────────────────────────────────────────────────────────────────────

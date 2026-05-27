@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MATHGRID GOLDEN BASELINE (2026-05-13)
 
 This document establishes the verified, state-of-the-art Golden Baseline for the MathGrid suite. No further modifications are permitted to the stabilized mechanics without explicit instruction and robust regression testing.
@@ -103,4 +102,3 @@ Before modifying CombineGrid input, bomb/wildcard, or performance-sensitive rend
 Before modifying SpeedGrid feedback or sound systems, coder must read the matching SpeedGrid contract document:
 * `docs/speedgrid/SPEEDGRID_FEEDBACK_CONTRACT.md`
 * `docs/speedgrid/SPEEDGRID_SOUND_CONTRACT.md`
-────────────────────────────────────────────────────────────────────────────────

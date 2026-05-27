@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MathGrid Stabilization Baseline (2026-05-11)
 
 This document establishes the authoritative baseline for the MathGrid suite, encompassing both **SpeedGrid** and **CombineGrid**. These games must remain isolated to prevent feature drift and cross-game regressions.
@@ -187,4 +186,3 @@ Replace rough placeholder tones with more polished, game-appropriate sounds.
 ---
 
 *Status: MATHGRID SUITE STABILIZED (2026-05-11)*
-────────────────────────────────────────────────────────────────────────────────

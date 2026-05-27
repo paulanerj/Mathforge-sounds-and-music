@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export const INPUT_TUNING = {
   // Corner and Diagonal Detection
   CORNER_THRESHOLD: 0.42,
@@ -38,4 +37,3 @@ export const TUNING_PRESETS = {
     SNAP_RELEASE_FACTOR: 0.8,
   }
 };
-────────────────────────────────────────────────────────────────────────────────

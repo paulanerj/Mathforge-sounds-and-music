@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export interface ScoreState {
   score: number;
   comboCount: number;
@@ -56,4 +55,3 @@ export function nextMultiplier(state: ScoreState): number {
 export function isAtTierBoundary(state: ScoreState): boolean {
   return state.comboCount > 0 && state.comboCount % COMBO_TIER_SIZE === 0;
 }
-────────────────────────────────────────────────────────────────────────────────

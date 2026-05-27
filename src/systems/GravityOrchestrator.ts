@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { applyGravity } from './GravitySystem';
 import type { FallingTile, SpawnedPosition } from './GravitySystem';
 import { applyBonusMaskGravity } from './BonusMaskSystem';
@@ -65,4 +64,3 @@ export function runGravityOrchestrator(
     spawnBonusMap: gravResult.spawnBonusMap,
   };
 }
-────────────────────────────────────────────────────────────────────────────────

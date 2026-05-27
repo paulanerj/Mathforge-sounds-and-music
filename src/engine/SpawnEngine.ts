@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import type { PracticeProfile } from './PracticeProfile';
 
 export interface SpawnedTile {
@@ -211,4 +210,3 @@ export function spawnTileWeighted(target: number, profile: PracticeProfile, prng
 export function spawnTileZero(target: number, profile: PracticeProfile, prng: () => number, zeroSentinel: number): SpawnedTile {
   return spawnTileCombineGrid(target, profile, prng, zeroSentinel);
 }
-────────────────────────────────────────────────────────────────────────────────

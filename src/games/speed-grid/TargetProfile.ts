@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export type TargetSource = 'multiples' | 'specific' | 'range' | 'primes' | 'factors' | 'classic';
 
 export type TargetProfile = {
@@ -50,4 +49,3 @@ export const CLASSIC_PROFILE: TargetProfile = {
 };
 
 export const TARGET_PROFILES: TargetProfile[] = [CLASSIC_PROFILE];
-────────────────────────────────────────────────────────────────────────────────

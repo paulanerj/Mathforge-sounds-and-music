@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { GridPos, BaseGridState } from '../../engine/grid/GridTypes';
 import { GridGameRules } from '../../engine/grid/GridRules';
 import { TargetProfile, TargetCategory, getBalancedBags } from '../../engine/SpawnEngine';
@@ -1050,4 +1049,3 @@ export const CombineGridRules: GridGameRules<CGState, Action> = {
     }
   }
 };
-────────────────────────────────────────────────────────────────────────────────

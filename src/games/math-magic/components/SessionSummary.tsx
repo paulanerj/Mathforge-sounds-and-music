@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import React, { useEffect, useState } from 'react';
 import { MathMagicState, MathMagicAction } from '../types';
 import { SensoryManager, SensoryEvent } from '../SensoryManager';
@@ -134,4 +133,3 @@ export function SessionSummary({ state, dispatch, onPlayAgain }: { state: MathMa
     </div>
   );
 }
-────────────────────────────────────────────────────────────────────────────────

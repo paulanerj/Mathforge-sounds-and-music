@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { MathMagicState, MathMagicTile } from '../types';
 
 export interface ValidationPayload {
@@ -16,4 +15,3 @@ export interface MathMagicStrategy {
   interactionType?: 'tap' | 'drag';
   validate(state: MathMagicState, payload: ValidationPayload): boolean;
 }
-────────────────────────────────────────────────────────────────────────────────

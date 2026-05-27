@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID SETTINGS LIFECYCLE
 
 ## 1. FLOW ARCHITECTURE
@@ -41,4 +40,3 @@ When a **REGEN** setting is committed:
 2. The board is re-randomized using the new constraints.
 3. The Target sequence is recalculated.
 4. Existing score and multipliers are preserved (unless categorical reset is flagged).
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SPEEDGRID RENDER PIPELINE
 
 ## 1. THE PIPELINE ARCHITECTURE
@@ -25,4 +24,3 @@ The SpeedGrid UI is a controlled projection of the State. It follows a strict "O
     - Path rendering via Canvas to avoid DOM element explosion.
     - Particle pooling for `TimeTile` bursts to stabilize Garbage Collection.
 - **Zero Thresholds**: Animations must be efficient enough that input latency remains <16ms.
-────────────────────────────────────────────────────────────────────────────────

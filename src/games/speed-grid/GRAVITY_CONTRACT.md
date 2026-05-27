@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # SpeedGrid Gravity Contract
 
 ## CORE RULE
@@ -18,4 +17,3 @@ Within each column completely independently, tiles collapse downward. There is a
 
 ### STEP 3 — REFILL
 New tiles spawn strictly ABOVE their own column and fall downward into empty slots. They preserve a strict x-lock for the entire duration of the animation.
-────────────────────────────────────────────────────────────────────────────────

@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export type TimerDirection = 'countdown' | 'countup';
 
 export interface TimerState {
@@ -75,4 +74,3 @@ export function countdownProgress(state: TimerState): number {
   if (state.totalSeconds === 0) return 0;
   return Math.max(0, Math.min(1, state.remainingSeconds / state.totalSeconds));
 }
-────────────────────────────────────────────────────────────────────────────────

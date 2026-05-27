@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # CombineGrid Current State Audit (2026-05-11)
 
 > [!IMPORTANT]
@@ -596,4 +595,3 @@ This is an explicit stabilization and anti-regression boundary.
 - `ENGINE_CONTRACT`: Spawn rules modified to allow `requested=0, provided=0` as a healthy state during zero-refill cycles. This does not weaken SpeedGrid logic which relies on standard `>0` logic.
 
 **DO NOT CHANGE THESE CONTRACTS WITHOUT EXPLICIT REGRESSION TESTING.**
-────────────────────────────────────────────────────────────────────────────────

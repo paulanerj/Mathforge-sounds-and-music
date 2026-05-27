@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 MATH MAGIC: ARCHITECTURE & INTERACTION CONTRACT
 CRITICAL: Do not modify the systems below without explicit, overriding permission from the Director.
 
@@ -28,4 +27,3 @@ Banners: No static instructional banners are permitted above the grid. Instructi
 
 5. Project Isolation (LOCKED)
 SpeedGrid and CombineGrid source code are strictly off-limits.
-────────────────────────────────────────────────────────────────────────────────

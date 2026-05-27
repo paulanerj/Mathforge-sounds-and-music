@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 # MathGrid Project Manager Handoff & State Capture
 
 Welcome. This document is a comprehensive state capture of the MathGrid application to smoothly transition you into your role as Project Manager. The previous PM has reached their context limit. This document synthesizes the codebase layout, architectural boundaries, recent stabilization efforts, and future trajectory.
@@ -83,4 +82,3 @@ The project is now extremely stable. All regressions have been closed out. Your 
 4. **New Game Mode**: Introduce a third mathematical grid game following the isolated-directory architecture established.
 
 Welcome to MathGrid! Lead the coding agent to maintain this high-quality baseline.
-────────────────────────────────────────────────────────────────────────────────

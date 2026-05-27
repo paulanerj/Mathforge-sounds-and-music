@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 export { makePrng, randomSeed, randomInt, randomPick } from './rng';
 export {
   PRACTICE_PROFILES,
@@ -28,4 +27,3 @@ export { generateTarget, evaluate, chainMatchesTarget } from './TargetGenerator'
 export type { EvalMode } from './TargetGenerator';
 export { createSession, addScore, incrementRound, elapsedMs } from './EngineSession';
 export type { EngineSession } from './EngineSession';
-────────────────────────────────────────────────────────────────────────────────

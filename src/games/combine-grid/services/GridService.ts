@@ -1,4 +1,3 @@
-────────────────────────────────────────────────────────────────────────────────
 import { GridPos, EvalMode } from '../types';
 import { evaluate } from '../../../engine/public';
 import { ZERO_TILE_VALUE, BOMB_TILE_VALUE } from '../constants';
@@ -198,4 +197,3 @@ export function validateBoard(board: number[][], rows: number, cols: number): vo
     }
   }
 }
-────────────────────────────────────────────────────────────────────────────────
