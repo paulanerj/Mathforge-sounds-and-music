@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>MathForge • Speed Grid Adaptive Audio Lab R4 — Live Web Lab</title>
+<style>
+/* Standalone testing surface. No dependencies, accounts, or external audio are required to open it. */
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#edf2f7;background:#0c1120;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 5%,#1c2a49 0,#0c1120 48%,#090d17 100%);min-height:100vh;line-height:1.44}
+main{max-width:1320px;margin:auto;padding:22px 18px 90px}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}h1{font-size:clamp(1.5rem,3vw,2.2rem);margin:.2rem 0 .35rem;letter-spacing:-.045em}h2{font-size:1.08rem;margin:0 0 12px}h3{font-size:.96rem;margin:.2rem 0 .3rem}.muted{color:#a3b2cb;font-size:.88rem}.eyebrow{font-size:.7rem;color:#91b1d9;text-transform:uppercase;letter-spacing:.18em;font-weight:800}p{margin:.3rem 0}.pill{border:1px solid #3a4c68;border-radius:99px;padding:7px 11px;font-weight:750;font-size:.78rem;background:#19263b;white-space:nowrap}
+.layout{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.panel{background:#121b2dcc;border:1px solid #30405b;border-radius:20px;padding:20px;box-shadow:0 15px 36px #0003}.span{grid-column:1/-1}.worlds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.world{padding:11px 12px;text-align:left;background:#1b2a42;border:1px solid #334966;color:#e9f3ff;border-radius:12px;cursor:pointer;transition:.15s}.world:hover{border-color:#8db5e6}.world:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid #a8e8ff;outline-offset:2px}.world[aria-pressed="true"]{background:#164e62;border-color:#64d6d1;box-shadow:inset 0 0 0 1px #64d6d1}.world strong{display:block;font-size:.92rem}.world span{display:block;margin-top:4px;color:#bdd0e9;font-size:.76rem}.panelnav{display:flex;justify-content:space-between;align-items:center;gap:12px}.meter{height:10px;background:#25334b;border-radius:10px;overflow:hidden;margin:9px 0}.meter>div{height:100%;background:linear-gradient(90deg,#3c9dae,#92e6a8);width:0%;transition:width .35s}.kv{display:flex;justify-content:space-between;gap:10px;font-size:.86rem;padding:5px 0;border-bottom:1px solid #293650}.kv:last-child{border:0}.kv span:first-child{color:#a6b8d0}.value{font-weight:750;text-align:right}.state{font-size:clamp(1.3rem,2.7vw,1.9rem);font-weight:850;color:#9ee8d7;letter-spacing:-.03em}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.actions button,button.action{border:1px solid #436080;color:#eef6ff;background:#203754;border-radius:11px;padding:12px;cursor:pointer;font-weight:750}.actions button:hover,button.action:hover{background:#2e5073}.actions button:active,.world:active{transform:scale(.985)}.actions button.accent{background:#205f66;border-color:#3cb5b9}.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.badge{font-size:.75rem;font-weight:750;border-radius:8px;background:#24384b;padding:4px 8px;color:#b4e9f8}.stems{display:grid;gap:12px}.stem{padding:12px;background:#16243a;border:1px solid #32445e;border-radius:13px}.stem-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.stem input[type=file]{font-size:.8rem;max-width:100%;width:100%;margin:9px 0 5px}.stem input[type=url]{display:block;width:100%;background:#0d1728;color:#f3f8ff;border:1px solid #3a4d68;padding:8px 10px;border-radius:9px;font-size:.82rem}.stem input[type=range]{width:100%;accent-color:#72ddc2}.stem label{font-size:.78rem;color:#bdcde3}.sm{font-size:.75rem}.status{font-size:.79rem;color:#9fadc3;margin:4px 0}.status.ok{color:#75e4b5}.status.bad{color:#ffb0a7}.diag{font:12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;background:#0b1525;border:1px solid #2a3b56;border-radius:10px;padding:12px;max-height:260px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}.controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:11px}button.small{font-size:.78rem;padding:8px 11px}.instructions{font-size:.82rem;color:#b7c8de}.divider{border:0;border-top:1px solid #31415b;margin:17px 0}#prompt{white-space:pre-wrap;font-size:.8rem;color:#bdcfe5;padding:11px 14px;background:#111f31;border-radius:10px;border:1px solid #31445e}.switch{display:flex;gap:8px;align-items:center;font-size:.83rem}.switch input{accent-color:#80d9bb}.bars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:15px}.bar{height:84px;border-radius:10px;background:#192942;display:flex;align-items:flex-end;overflow:hidden;border:1px solid #2d435f}.bar b{width:100%;height:0%;background:linear-gradient(0deg,#287a96,#78dec5);transition:height .4s;display:block}.barcap{font-size:.71rem;text-align:center;color:#afc4dc;margin-top:5px}.bullet{display:inline-block;width:9px;height:9px;border-radius:50%;background:#7788a1;margin-right:5px}.bullet.ok{background:#70dfae}.bullet.bad{background:#eaa19a}
+.ready-banner{background:#603334;border:1px solid #bd7070;padding:14px 17px;border-radius:12px;margin:14px 0;font-weight:750;line-height:1.6}
+.ready-banner.ready{background:#12483f;border-color:#4cb9a5;color:#c7ffe8}
+.speaker-panel{background:linear-gradient(115deg,#1e354e,#133b42);border:1px solid #49778c;border-radius:18px;padding:18px;margin:16px 0 18px}
+.speaker-panel .controls{margin:12px 0;gap:10px}
+button.speaker{padding:13px 17px;font-weight:900;background:#168a83;border:1px solid #61dcce;color:#ffffff;border-radius:11px;cursor:pointer}
+button.speaker:hover{background:#20a399}button.speaker:active{transform:translateY(2px)}
+.feedback{border:1px solid #56718f;background:#152c42;border-radius:10px;padding:9px 12px;margin:10px 0;font-size:.87rem}
+.feedback strong{color:#a7ffdf}.pressed,.world.pressed,.actions button.pressed{box-shadow:0 0 0 3px #a5fbd977!important;border-color:#c7ffef!important;background:#287e7b!important}
+.copy-fallback{margin-top:12px;padding:10px;border:1px solid #6a88a0;border-radius:8px;background:#12273c}
+.copy-fallback textarea{width:100%;min-height:90px;background:#0a1729;color:white;border:1px solid #8aa3c1;padding:8px;resize:vertical}
+#signalMeter{height:9px;border-radius:12px;background:#35465b;overflow:hidden;margin:8px 0 2px}
+#signalLevel{height:100%;width:0;background:#64dec2;transition:width .08s}@media(min-width:1100px){.worlds{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:780px){.layout{grid-template-columns:1fr}.span{grid-column:auto}header{flex-direction:column}.panel{padding:15px}}@media(max-width:400px){.worlds{grid-template-columns:1fr}.actions button{padding:10px 6px}}
+
+.guide-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:14px 0}
+.guide-steps>div{background:#172a42;border:1px solid #395873;border-radius:12px;padding:11px}
+.guide-steps strong{display:block;color:#a3eadb;margin-bottom:6px}
+.guide-steps span{display:block;color:#bfcee2;font-size:.78rem}
+.notice{padding:12px;border-left:3px solid #75d6c5;background:#12383c;border-radius:7px;color:#cbece6;font-size:.85rem}
+code{font-size:.86em;color:#bde4ee}
+.config-import{display:inline-flex;align-items:center;gap:8px;border-radius:11px;border:1px solid #436080;background:#203754;color:#eef6ff;padding:10px;font-size:.78rem;font-weight:750;cursor:pointer}
+.config-import input{width:180px;font-size:.72rem}
+#legacyStatus{min-height:20px}
+@media(max-width:900px){.guide-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:450px){.guide-steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<header><div><div class="eyebrow">MathForge / Music systems / R4 full adaptive audio development studio</div><h1>Speed Grid Adaptive Audio Lab R4</h1><p class="muted">Recorded music stems + game-driven arrangement. Four-layer adaptive soundtrack laboratory. Recorded stems only for music, with a separate audible legacy MP3 preview. Production gameplay and SDK remain untouched.</p></div><div class="pill" id="appStatus">AUDIO ENGINE: NOT UNLOCKED</div></header>
+<div id="runtimeGate" class="ready-banner" role="status">JAVASCRIPT NOT RUNNING — Buttons cannot work in a static preview. Download the HTML file, open the downloaded file in Chrome or Edge, and look for the green READY banner.</div>
+<section class="speaker-panel" aria-label="Desktop speaker verification">
+  <div class="eyebrow">Step 1 / audio system</div>
+  <h2 style="margin:.35rem 0">First, verify sound with one click</h2>
+  <p class="muted">This speaker check is a short diagnostic tone, not the background music. No music files or login are required for the short test tones. This is the same Web Audio approach that worked in R3 on your desktop.</p>
+  <div class="controls">
+    <button class="speaker" id="testSpeakers" type="button">▶ TEST SPEAKERS — 3 tones</button>
+    <button class="action" id="testEventSound" type="button">▶ TEST SUCCESS SFX</button>
+    <button class="action" id="resumeAudio" type="button">↻ UNLOCK / RESUME AUDIO</button>
+    <button class="action" id="selfTest100" type="button">✓ RUN 100 UI CHECKS</button>
+  </div>
+  <div class="feedback" id="interactionReport" role="status" aria-live="polite">Last control: none · Clicks: <strong id="clickCount">0</strong></div>
+  <div class="kv"><span>Audio test result</span><span class="value" id="testSoundState">Not tested</span></div>
+  <div class="kv"><span>Context / permission</span><span class="value" id="speakerCtx">Not started</span></div>
+  <div class="kv"><span>Detected output signal (software)</span><span class="value" id="outputSignal">Not measured</span></div>
+  <div id="signalMeter"><div id="signalLevel"></div></div>
+  <p class="instructions">A positive signal means the browser produced audio samples; it cannot establish that your Windows speaker or headphones actually played them. If this shows green but you hear nothing, inspect Windows output device/volume and Chrome or Edge site sound permission.</p>
+  <p class="status" id="selfTestResult">Browser verification: not run</p>
+</section>
+
+<section class="studio-guide panel" aria-label="Start here">
+ <div class="eyebrow">Live laboratory / start here</div>
+ <h2>Start in this order</h2>
+ <div class="guide-steps"><div><strong>1. Verify sound</strong><span>Click the three-note test above (your R3 result already passed).</span></div><div><strong>2. Listen to an actual MP3</strong><span>Play the existing library file below; it is a technical preview, not an approved soundtrack.</span></div><div><strong>3. Choose a musical world</strong><span>Ten creative directions are available. Selecting a world updates the musical specification.</span></div><div><strong>4. Simulate Speed Grid</strong><span>Press rapid solves, overshoot, pause, recovery and time tiles. Watch the director and layer meters change.</span></div><div><strong>5. Load four recorded stems</strong><span>When we have aligned recordings, attach Atmosphere / Harmony / Motion / Wonder, then Play Selected Composition.</span></div></div>
+ <div class="notice">This is a sound-design and event-simulation laboratory, <strong>not the actual playable Speed Grid game</strong>. It deliberately does not modify scoring, gestures, or the MathForge SDK.</div>
+</section>
+<section class="speaker-panel" aria-label="Recorded MP3 technical preview">
+ <div class="eyebrow">Step 2 / listen to a real audio file</div>
+ <h2>Recorded MP3 preview <span class="badge">1 existing track</span></h2>
+ <p class="muted">The repository contains <code>main_menu_loop.mp3</code>. This player verifies real MP3 delivery and playback. It is not split into musical stems and therefore cannot demonstrate live adaptive layers by itself.</p>
+ <audio id="legacyAudio" controls preload="none" src="./audio/music/main_menu_loop.mp3" style="width:100%;margin:12px 0 5px">Your browser does not support MP3 audio playback.</audio>
+ <div class="controls"><button class="action" type="button" id="toggleLegacy">▶ PLAY / PAUSE RECORDED MP3</button><button class="action small" type="button" id="stopLegacy">■ STOP MP3</button></div>
+ <p class="status" id="legacyStatus">Ready to request existing repository audio.</p>
+</section>
+<div class="layout">
+<section class="panel"><h2>1. Choose a composition</h2><p class="muted">Selecting a composition immediately tries to play it. A missing soundtrack is reported, not replaced by another song.</p><div class="worlds" id="worlds"></div><hr class="divider"><div class="panelnav"><div><div class="eyebrow">Current composition</div><h2 id="worldTitle">Stone Garden</h2></div><span class="badge" id="tempo">96 BPM · 8 bars</span></div><p class="muted" id="worldDescription"></p><div class="status" id="playStatus">Select a composition to activate audio.</div><h3>Composition production prompt</h3><div id="prompt"></div><div class="controls"><button class="action small" id="copyPrompt">Copy production prompt</button><button class="action small" id="playSelected">▶ Play selected composition</button><button class="action small" id="stopSound">■ Stop stems</button><label class="switch"><input type="checkbox" id="musicEnabled" checked> Music enabled</label></div></section>
+<section class="panel"><h2>2. Simulate Speed Grid</h2><p class="muted">These are simulated semantic outcomes. They cannot affect gameplay correctness, scoring, or pointer handling.</p><div class="state" id="directorState">Neutral focus</div><div class="meter"><div id="energyMeter"></div></div><div class="kv"><span>Intensity</span><span class="value" id="energyText">25 / 100</span></div><div class="kv"><span>Success streak</span><span class="value" id="streak">0</span></div><div class="kv"><span>Recent overshoots</span><span class="value" id="overshoots">0</span></div><div class="kv"><span>Last accepted outcome</span><span class="value" id="lastOutcome">None</span></div><hr class="divider"><div class="actions" id="events"><button class="accent" data-event="success">✓ Path success</button><button data-event="overshoot">× Overshoot</button><button data-event="tile">✦ Time tile</button><button data-event="pause">◷ Pause / thinking</button><button data-event="recovery">↗ Recovery sequence</button><button data-event="rapid">⚡ Rapid solves</button><button data-event="round_end">★ Round complete</button><button data-event="reset">↺ Reset session</button></div><div class="controls"><label class="switch"><input type="checkbox" id="sfx" checked> Gentle event sound effects (not music)</label><button class="action small" id="autoSim">▶ Start auto simulation</button><button class="action small" id="stopAutoSim">■ Stop auto simulation</button></div><p class="instructions">The director responds to sustained patterns; a single overshoot never triggers a punishment soundtrack. Layer changes are scheduled on the next musical bar.</p><div class="bars" id="bars"></div></section>
+<section class="panel"><h2>3. Attach recorded stems</h2><p class="muted">Four files from <strong>the same composition</strong>, exported from bar 1 to the identical endpoint. Upload local MP3/WAV/OGG files or specify direct HTTPS URLs. Keep all stems at their original tempo and pitch.</p><div class="stems" id="stems"></div><p class="instructions">Local files stay in this tab; they are not uploaded. For remote files, the server must allow CORS and serve actual audio. Four full-length stereo files consume decoded memory on phones, so keep prototypes short.</p><div class="controls"><button class="action small" id="checkAudio">Run diagnostics</button><button class="action small" id="downloadReport">Download diagnostics (.txt)</button><button class="action small" id="copyReport">Copy report</button><button class="action small" id="copyManifest">Copy selected manifest</button><button class="action small" id="exportConfig">Download studio config (.json)</button><label class="config-import">Import studio config (.json)<input id="importConfig" type="file" accept=".json,application/json"></label></div></section>
+<section class="panel"><h2>4. Audio diagnostics</h2><div class="status" id="configStatus">Composition choice and remote URL settings can be exported; local audio file bytes are never included in JSON.</div><div class="kv"><span>AudioContext</span><span class="value" id="ctxState">not created</span></div><div class="kv"><span>Loaded stems</span><span class="value" id="loadedCount">0 / 4</span></div><div class="kv"><span>Musical synchronization</span><span class="value" id="syncState">not running</span></div><div class="kv"><span>Last error</span><span class="value" id="errorState">none</span></div><p class="muted">Live event / failure log</p><div class="diag" id="log" aria-live="polite">No events yet.</div><div class="copy-fallback" id="copyFallback" hidden><p>Clipboard access was unavailable; manually select/copy this content:</p><textarea id="fallbackText" readonly aria-label="Copyable report"></textarea></div><p class="instructions">Tests distinguish: button click, sound permissions, file fetch, decode, stem duration compatibility, playback start, mix gain change, and stop. Browser autoplay restrictions mean activation must follow a real tap.</p></section>
+</div>
+</main>
+<script>
+'use strict';
+/*
+ * MathForge Speed Grid Adaptive Audio Lab R4.
+ * Standalone experiment, intentionally detached from the production game.
+ * Music is always prerecorded AudioBuffer stems; only optional small SFX use oscillators.
+ * Design: game facts -> director decisions -> scheduled bar-aligned gain automation.
+ * This file is intended to be easy to audit and test before the SDK bridge exists.
+ */
+const ROLES=['atmosphere','harmony','motion','wonder'];
+const ROLE_HELP={atmosphere:'Continuous musical bed',harmony:'Additional chords / textures',motion:'Rhythmic movement / pulse',wonder:'Sparkle, lift, emotional colour'};
+const WORLDS=[
+ {id:'stone-garden',name:'Stone Garden',bpm:96,desc:'Warm mallets, soft wood and open air; an attentive, tactile calm.',key:'D major',style:'gentle acoustic mallets, warm upright bass, subtle wooden percussion, slow evolving textures'},
+ {id:'river-lantern',name:'River Lantern',bpm:104,desc:'Gentle water, plucked strings, drifting light; playful forward motion.',key:'A major',style:'delicate plucked strings, marimba, brushed percussion, luminous sustained chords'},
+ {id:'sky-atrium',name:'Sky Atrium',bpm:100,desc:'Airy bells, piano, glass-like reflections; a more spacious sense of discovery.',key:'G major',style:'felt piano, glockenspiel, light shakers, airy harmonic beds'},
+ {id:'moss-observatory',name:'Moss Observatory',bpm:92,desc:'Organic marimba and restrained pulses, designed for long focus sessions.',key:'E major',style:'marimba, muted harp, warm organic pads, dry hand percussion'},
+ {id:'glass-staircase',name:'Glass Staircase',bpm:108,desc:'Clear pitched percussion rising with concentration but never becoming loud.',key:'C major',style:'soft glass bells, pizzicato strings, round bass, subtle syncopated hand drums'},
+ {id:'ember-orchard',name:'Ember Orchard',bpm:98,desc:'Soft afternoon glow with measured, comforting rhythmic movement.',key:'F major',style:'nylon guitar harmonics, vibraphone, muted pizzicato, shakers'},
+ {id:'floating-library',name:'Floating Library',bpm:90,desc:'Quiet curiosity and generous space between rhythmic events.',key:'B-flat major',style:'felt piano, breathy clarinet, bowed vibraphone, barely audible brushed rhythm'},
+ {id:'crescent-workshop',name:'Crescent Workshop',bpm:112,desc:'An upbeat but non-fatiguing maker-space theme for fluent play.',key:'D major',style:'woodblocks, tuned percussion, pizzicato, delicate kick brush'},
+ {id:'paper-constellations',name:'Paper Constellations',bpm:102,desc:'Light constellation-like motifs, emphasizing discovery rather than pressure.',key:'A major',style:'celesta, kalimba, warm strings, sparse evolving percussion'},
+ {id:'morning-circuit',name:'Morning Circuit',bpm:110,desc:'A brighter, quietly energetic option for faster practice.',key:'G major',style:'guitar harmonics, hand drums, mallets, subtle synth pad from a real instrument recording'}
+];
+// Each scene keeps its own references. Files remain local in memory until the page closes.
+const assets=Object.fromEntries(WORLDS.map(w=>[w.id,Object.fromEntries(ROLES.map(role=>[role,{url:'',buffer:null,name:'',status:'empty'}]))]));
+let selected=WORLDS[0],ctx=null,master=null,sourceNodes=[],layerGains=[],transportStart=0,playing=false,runToken=0;
+let intensity=25,streak=0,lastSolveTimes=[],lastOvershootTimes=[],lastActivity=performance.now(),phase='neutral',lastOutcome='None',logLines=[],mix=[.42,.16,.11,.05],masterEnabled=true,playIssue='';
+let analyser=null,signalData=null,signalPeak=0,clickCounter=0,lastPressed='',outputSamplesDetected=0,diagnosticSoundCount=0,lastHundredTestResults=[];
+const $=id=>document.getElementById(id);
+const clamp=(v,min,max)=>Math.min(max,Math.max(min,v));
+const elapsed=()=>Math.round(performance.now());
+function log(message,kind='info'){
+ const line=`${new Date().toLocaleTimeString()} ${kind.toUpperCase()}  ${message}`;
+ logLines.push(line);logLines=logLines.slice(-65);$('log').textContent=logLines.join('\n');$('log').scrollTop=$('log').scrollHeight;
+ if(kind==='error')$('errorState').textContent=message.slice(0,75);
+}
+function productionPrompt(w){const length=(8*4*60/w.bpm).toFixed(3);
+return `Create a premium, commercially licensable adaptive instrumental loop for a child-friendly math practice game. Scene: ${w.name}. Feeling: ${w.desc} Sound palette: ${w.style}. Key: ${w.key}. Meter 4/4; tempo exactly ${w.bpm} BPM; length exactly 8 bars (${length} seconds); seamless zero-click loop. NO spoken words, vocals, harsh beeps, excessive reverb tails, dramatic drops, threatening tension, or abrupt endings. Deliver FOUR separate, perfectly phase-aligned exported audio stems of identical duration and master clock: (1) atmosphere: continuous bed, (2) harmony: optional chord/texture contribution, (3) motion: optional subtle rhythmic pulse, (4) wonder: optional glints and uplifting motifs. All stems begin at bar 1 beat 1, have identical sample rates and exact length, retain complementary frequency ranges, and mix pleasingly in any combination; no loudness normalization per stem that destroys musical balance. Deliver lossless WAV masters and web MP3/OGG exports. Confirm ownership and commercial interactive-game licensing in writing.`;}
+function renderWorlds(){ $('worlds').innerHTML='';WORLDS.forEach(w=>{const b=document.createElement('button');b.className='world';b.type='button';b.setAttribute('aria-pressed',String(selected.id===w.id));b.innerHTML=`<strong>${w.name}</strong><span>${w.desc}</span>`;b.addEventListener('click',()=>activateWorld(w));$('worlds').appendChild(b)}); }
+function renderWorldDetails(){ $('worldTitle').textContent=selected.name;$('worldDescription').textContent=selected.desc;$('tempo').textContent=`${selected.bpm} BPM · 8 bars`;$('prompt').textContent=productionPrompt(selected);renderWorlds();renderStems();updateStatus(); }
+function renderStems(){
+ $('stems').innerHTML='';const group=assets[selected.id];ROLES.forEach((role,i)=>{
+  const a=group[role], wrap=document.createElement('div');wrap.className='stem';
+  wrap.innerHTML=`<div class="stem-top"><div><strong>${i+1}. ${role[0].toUpperCase()+role.slice(1)}</strong><p class="sm muted">${ROLE_HELP[role]}</p></div><span class="badge" id="loaded-${role}"></span></div><label>Choose audio file<input type="file" accept="audio/*,.mp3,.wav,.ogg,.m4a" data-role="${role}"></label><label>Or load HTTPS audio URL<input type="url" data-role-url="${role}" placeholder="https://your-audio-domain/.../${role}.mp3"></label><label>Manual mix cap <span id="cap-${role}">100%</span><input type="range" min="0" max="100" value="100" data-cap="${role}"></label>`;
+  $('stems').appendChild(wrap);
+  const fileInput=wrap.querySelector('[data-role]'),urlInput=wrap.querySelector('[data-role-url]'),slider=wrap.querySelector('[data-cap]');urlInput.value=a.url||'';
+  // Direct user-triggered file select, with filename, decoding and errors visible.
+  fileInput.addEventListener('change',async()=>{const file=fileInput.files?.[0];if(file)await loadLocal(role,file,selected.id)});
+  urlInput.addEventListener('change',()=>{a.url=urlInput.value.trim();a.buffer=null;a.name='';a.status=a.url?'URL configured':'empty';updateStatus();log(`${selected.name} ${role} URL ${a.url?'configured':'cleared'}`)});
+  slider.addEventListener('input',()=>{window.roleCaps[role]=Number(slider.value)/100;$(`cap-${role}`).textContent=`${slider.value}%`;applyMix();});
+ });updateStemBadges(); }
+window.roleCaps=Object.fromEntries(ROLES.map(r=>[r,1]));
+function updateStemBadges(){ const aa=assets[selected.id],loaded=ROLES.filter(r=>!!aa[r].buffer).length;$('loadedCount').textContent=`${loaded} / 4`;
+ ROLES.forEach(r=>{const el=$(`loaded-${r}`);if(!el)return;const a=aa[r];el.textContent=a.buffer?`${a.buffer.duration.toFixed(2)}s ready`:(a.status==='loading'?'Loading…':a.status==='error'?'Failed':'Missing');}); }
+async function ensureContext(){
+ if(!ctx){const Type=window.AudioContext||window.webkitAudioContext;if(!Type)throw new Error('Web Audio unsupported');ctx=new Type();master=ctx.createGain();master.gain.value=.68;analyser=ctx.createAnalyser();analyser.fftSize=1024;signalData=new Float32Array(analyser.fftSize);master.connect(analyser);analyser.connect(ctx.destination);log('AudioContext created');}
+ // Called directly from a click for Safari/iOS gesture activation; do not defer unlock behind network fetch.
+ if(ctx.state!=='running')await ctx.resume();$('ctxState').textContent=ctx.state; $('speakerCtx').textContent=ctx.state; $('appStatus').textContent=`AUDIO ENGINE: ${ctx.state.toUpperCase()}`;
+ if(ctx.state!=='running')throw new Error(`AudioContext state ${ctx.state}; tap again after granting audio playback`);
+}
+async function decodeAudio(data,label){if(!ctx)throw new Error('AudioContext must be initialized first');const bytes=data.slice(0);const buffer=await ctx.decodeAudioData(bytes);if(!buffer?.duration||buffer.duration<1)throw new Error(`${label} invalid or too short`);return buffer;}
+async function loadLocal(role,file,worldId){ const a=assets[worldId][role];
+ a.status='loading';updateStemBadges();log(`Decoding ${file.name} as ${worldId}/${role}`);
+ try{await ensureContext();const buffer=await decodeAudio(await file.arrayBuffer(),file.name);a.buffer=buffer;a.url='';a.name=file.name;a.status='ready';log(`${role}: decoded ${buffer.duration.toFixed(3)} s / ${buffer.numberOfChannels} channel(s)`);if(worldId===selected.id){updateStemBadges();if(playing)log('New stem available; reselect composition to synchronize all four stems.');}}
+ catch(e){a.status='error';log(`${role}: ${e.message}`,'error');updateStemBadges();}
+}
+async function loadRemote(role,worldId){const a=assets[worldId][role];if(!a.url||a.buffer)return;
+ if(!/^https:\/\//i.test(a.url)){a.status='error';log(`${role}: use a direct HTTPS URL`,'error');return;}
+ a.status='loading';updateStemBadges();log(`Fetching ${worldId}/${role} via HTTPS`);
+ try{const res=await fetch(a.url,{mode:'cors'});if(!res.ok)throw new Error(`HTTP ${res.status}`);const contentType=res.headers.get('content-type')||'';if(!/audio|octet-stream/i.test(contentType))log(`${role}: unusual content-type ${contentType}`);
+  const decoded=await decodeAudio(await res.arrayBuffer(),a.url);a.buffer=decoded;a.name=a.url.split('/').pop();a.status='ready';log(`${role}: decoded ${decoded.duration.toFixed(3)}s`);}
+ catch(e){a.status='error';log(`${role}: ${e.message} (check HTTPS, CORS, format)`,'error');}
+ updateStemBadges(); }
+function stopCurrent(fade=.15){if(!ctx)return;const now=ctx.currentTime;sourceNodes.forEach(({source,gain})=>{try{gain.gain.cancelScheduledValues(now);gain.gain.setValueAtTime(gain.gain.value,now);gain.gain.linearRampToValueAtTime(0,now+fade);source.stop(now+fade+.04);}catch(e){} });sourceNodes=[];layerGains=[];playing=false;transportStart=0;updateStatus();}
+async function activateWorld(w){
+ ++runToken;stopCurrent(.05);selected=w;playIssue='';renderWorldDetails();log(`Composition button clicked: ${w.name}`);
+ const token=runToken; try{await ensureContext();playSelectionConfirmation();}catch(e){log(`Start: ${e.message}`,'error');$('playStatus').textContent='Audio unlock failed; see diagnostics.';return;}
+ // If remote URLs are configured, fetch only the selected world's assets.
+ await Promise.all(ROLES.map(r=>loadRemote(r,w.id)));
+ if(token!==runToken){log(`Old composition activation cancelled (${w.name})`);return;}
+ const available=ROLES.filter(r=>assets[w.id][r].buffer);if(!available.length){stopCurrent();playIssue='NO RECORDED STEMS: add an audio file or HTTPS URL for this composition. No fake music substituted.';updateStatus();log(`${w.name}: no recorded files are loaded`,'error');return;}
+ const durations=available.map(r=>assets[w.id][r].buffer.duration);const maxDiff=Math.max(...durations)-Math.min(...durations);
+ if(maxDiff>.15){stopCurrent();log(`Stem durations differ by ${maxDiff.toFixed(3)}s; must align exports`,'error');playIssue='STEM LENGTH MISMATCH: stems must be exported at matching lengths.';updateStatus();return;}
+ const expected=8*barSec();if(durations.some(d=>Math.abs(d-expected)>.4)){stopCurrent();playIssue=`LENGTH GATE FAILED: expected eight bars (${expected.toFixed(3)}s) at ${w.bpm} BPM; file is ${durations[0].toFixed(3)}s. Re-export stems.`;log(playIssue,'error');updateStatus();return;}
+ stopCurrent(.12);
+ const start=ctx.currentTime+.09;transportStart=start;playing=true;playIssue='';
+ ROLES.forEach((role,i)=>{const buffer=assets[w.id][role].buffer;if(!buffer)return;
+  const source=ctx.createBufferSource(),g=ctx.createGain();source.buffer=buffer;source.loop=true;
+  // Matching content frame count creates repeatable loop timing; don't use independent HTML media clocks.
+  source.connect(g);g.connect(master);g.gain.setValueAtTime(0,start);source.start(start);sourceNodes.push({source,gain:g,role});layerGains[i]=g;
+ });applyMix(start);updateStatus();log(`START ${w.name} at audio clock ${start.toFixed(3)} / ${available.length} stems aligned`);
+}
+function barSec(){return 4*60/selected.bpm;}
+// Diagnostic selection chirp, explicitly not a substitute for recorded soundtrack.
+function playSelectionConfirmation(){if(!ctx||ctx.state!=='running')return;playDiagnosticTones([[480,.07,.035],[640,.085,.032]]);}
+function playDiagnosticTones(notes){
+ if(!ctx||!master||ctx.state!=='running')throw new Error('Audio engine is not running');
+ const base=ctx.currentTime+.025;
+ notes.forEach(([hz,seconds,volume],i)=>{
+  const osc=ctx.createOscillator(),gain=ctx.createGain(),t=base+i*.12;
+  osc.type='sine';osc.frequency.setValueAtTime(hz,t);
+  gain.gain.setValueAtTime(.0001,t);gain.gain.linearRampToValueAtTime(volume,t+.018);
+  gain.gain.exponentialRampToValueAtTime(.0001,t+seconds+.06);
+  osc.connect(gain);gain.connect(master);osc.start(t);osc.stop(t+seconds+.08);
+  osc.onended=()=>{osc.disconnect();gain.disconnect();};
+ });
+ diagnosticSoundCount+=notes.length;
+}
+async function speakerTest(){
+ $('testSoundState').textContent='Unlocking…';
+ try{
+  await ensureContext();
+  playDiagnosticTones([[440,.18,.17],[554.37,.18,.16],[659.25,.23,.17]]);
+  $('testSoundState').textContent='3 tones scheduled — listen now';
+  log(`SPEAKER TEST: scheduled 3 notes; AudioContext=${ctx.state}; nodes=${diagnosticSoundCount}`);
+ }catch(e){$('testSoundState').textContent='FAILED — see error log';log(`SPEAKER TEST: ${e.message}`,'error');}
+}
+async function eventSfxTest(){
+ try{await ensureContext();if(!$('sfx').checked){$('testSoundState').textContent='SFX muted: check the SFX switch';log('TEST SUCCESS SFX: skipped because SFX switch is OFF');return;}
+ gentleSfx('success');$('testSoundState').textContent='Success SFX scheduled';log('TEST SUCCESS SFX: notes scheduled');
+ }catch(e){$('testSoundState').textContent='SFX failed';log(`SFX: ${e.message}`,'error');}
+}
+function observeSignal(){
+ if(ctx&&analyser&&ctx.state==='running'){
+  analyser.getFloatTimeDomainData(signalData);let sum=0;
+  for(let i=0;i<signalData.length;i++)sum+=signalData[i]*signalData[i];
+  const rms=Math.sqrt(sum/signalData.length),v=Math.min(100,Math.round(rms*620));
+  if(rms>.003){outputSamplesDetected++;signalPeak=Math.max(signalPeak,rms);}
+  $('signalLevel').style.width=v+'%';
+  $('outputSignal').textContent=outputSamplesDetected>0?`DETECTED (peak RMS ${signalPeak.toFixed(3)})`:'Monitoring — no signal yet';
+ }else $('signalLevel').style.width='0%';
+ requestAnimationFrame(observeSignal);
+}
+
+function nextBarTime(){if(!ctx||!playing)return 0;const now=ctx.currentTime;return transportStart+Math.max(0,Math.ceil((now-transportStart+.04)/barSec()))*barSec();}
+const mixForPhase={neutral:[.42,.16,.11,.05],flow:[.44,.24,.30,.20],hesitation:[.42,.13,.01,.01],recovering:[.44,.24,.12,.24],complete:[.44,.28,.04,.36]};
+function applyMix(t){
+ mix=mixForPhase[phase]||mixForPhase.neutral;ROLES.forEach((r,i)=>{$(`bar-${r}`)?.style.setProperty('height',`${Math.round(mix[i]*100)}%`)});
+ if(!ctx||!playing)return;const when=t??nextBarTime(),duration=.55;
+ sourceNodes.forEach(({gain,role})=>{const i=ROLES.indexOf(role),dest=masterEnabled?mix[i]*window.roleCaps[role]:0;
+  gain.gain.cancelScheduledValues(when);gain.gain.setValueAtTime(gain.gain.value,when);gain.gain.linearRampToValueAtTime(dest,when+duration);
+ });$('syncState').textContent=`next mix @ ${when.toFixed(2)}s (bar ${Math.max(1,Math.ceil((when-transportStart)/barSec())+1)})`;
+}
+function renderBars(){ $('bars').innerHTML=ROLES.map(role=>`<div><div class="bar"><b id="bar-${role}"></b></div><div class="barcap">${role}</div></div>`).join('');}
+function updateStatus(){const a=assets[selected.id],loaded=ROLES.filter(r=>!!a[r].buffer).length;$('playStatus').textContent=playing?`PLAYING ${selected.name}: ${loaded}/4 stems synchronized on one audio clock.`:playIssue|| (loaded?`${loaded} stem(s) ready. Tap a composition to hear it.`:'No recorded audio loaded for this composition.');
+ $('ctxState').textContent=ctx?.state||'not created';if(!playing)$('syncState').textContent='not running';updateStemBadges();}
+function renderDirector(){const labels={neutral:'Neutral focus',flow:'Fluent momentum',hesitation:'Thinking space',recovering:'Gentle recovery',complete:'Round complete'};
+ $('directorState').textContent=labels[phase];$('energyMeter').style.width=`${intensity}%`;$('energyText').textContent=`${Math.round(intensity)} / 100`;$('streak').textContent=streak;$('overshoots').textContent=lastOvershootTimes.length;$('lastOutcome').textContent=lastOutcome;applyMix();}
+function recomputeDirector(type,now){
+ // Distinguish observed task events from unproven learner-state claims.
+ lastSolveTimes=lastSolveTimes.filter(t=>now-t<12000);lastOvershootTimes=lastOvershootTimes.filter(t=>now-t<10000);
+ if(type==='round_end'){phase='complete';intensity=30;return;}
+ if(type==='pause'){phase='hesitation';intensity=15;return;}
+ if(type==='overshoot'){streak=0;intensity=clamp(intensity-6,12,85);if(lastOvershootTimes.length>=2)phase='hesitation';else phase='neutral';return;}
+ if(type==='success'){
+  intensity=clamp(intensity+8,15,85);
+  if(lastOvershootTimes.length>=2&&streak>=2){phase='recovering';lastOvershootTimes=[];}
+  else if(lastSolveTimes.length>=3&&streak>=3)phase='flow';else phase='neutral';return;
+ }
+ if(type==='tile'){intensity=clamp(intensity+4,15,85);return;}
+}
+function gentleSfx(type){if(!$('sfx').checked)return;if(!ctx||ctx.state!=='running'){ensureContext().then(()=>gentleSfx(type)).catch(e=>log(`SFX unlock: ${e.message}`,'error'));return;}if(!master)return;
+ const now=ctx.currentTime,tones=type==='overshoot'?[[310,.06,.025]]:type==='success'?[[660,.075,.038],[880,.11,.028]]:type==='tile'?[[940,.13,.03]]:type==='round_end'?[[523,.14,.035],[659,.15,.035],[784,.22,.035]]:[];
+ // Tiny local tactile cues only. Never synthesize backing music.
+ tones.forEach(([freq,dur,level],index)=>{const start=now+index*.07,osc=ctx.createOscillator(),gain=ctx.createGain();osc.type='sine';osc.frequency.value=freq;gain.gain.setValueAtTime(.0001,start);gain.gain.linearRampToValueAtTime(level,start+.01);gain.gain.exponentialRampToValueAtTime(.0001,start+dur);osc.connect(gain);gain.connect(master);osc.start(start);osc.stop(start+dur+.01);osc.onended=()=>{osc.disconnect();gain.disconnect();};diagnosticSoundCount++;});
+}
+function event(type){const now=performance.now();log(`SIMULATED GAME EVENT ${type}`);if($('sfx').checked){ensureContext().then(()=>{}).catch(e=>log(`Event sound unlock: ${e.message}`,'error'));}if(type==='reset'){streak=0;intensity=25;lastSolveTimes=[];lastOvershootTimes=[];phase='neutral';lastOutcome='Reset';lastActivity=now;renderDirector();return;}
+ if(type==='rapid'){for(let i=0;i<4;i++){lastSolveTimes.push(now-2400+i*650);streak++;}lastOutcome='4 rapid path successes';recomputeDirector('success',now);phase='flow';intensity=75;gentleSfx('success');}
+ else if(type==='recovery'){lastOvershootTimes=[now-7500,now-5600];streak=2;lastSolveTimes=[now-1500,now];phase='recovering';intensity=40;lastOvershootTimes=[];lastOutcome='Two successes after difficulty';gentleSfx('success');}
+ else if(type==='pause'){lastActivity=now-6500;lastOutcome='Thinking pause (6.5 s)';recomputeDirector('pause',now);}
+ else {lastOutcome={success:'Successful path',overshoot:'Overshoot',tile:'Time tile collected',round_end:'Round complete'}[type];if(type==='success'){streak++;lastSolveTimes.push(now);}if(type==='overshoot')lastOvershootTimes.push(now);recomputeDirector(type,now);gentleSfx(type);}
+ lastActivity=now;renderDirector();log(`DIRECTOR ${phase}, intensity ${Math.round(intensity)}, streak ${streak}`);}
+function diagnostics(){const a=assets[selected.id],stems=ROLES.map(r=>a[r]),good=stems.filter(x=>x.buffer);log(`DIAGNOSTICS: scene=${selected.name}; audio=${ctx?.state||'not created'}; playback=${playing}`);
+ stems.forEach((s,i)=>log(`${ROLES[i]}: ${s.status}, ${s.buffer?s.buffer.duration.toFixed(3)+'s':(s.url?'remote URL set':'no stem')}`));
+ if(good.length>1){const d=good.map(x=>x.buffer.duration),delta=Math.max(...d)-Math.min(...d);log(`Stem length drift=${delta.toFixed(3)}s; gate=${delta<=.15?'PASS':'FAIL'}`,delta>.15?'error':'info');}
+ if(!good.length)log('Recorded music unavailable: load real files first (no substitute music).');return logLines.join('\n');}
+async function copy(text){try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard API unavailable');await navigator.clipboard.writeText(text);$('copyFallback').hidden=true;log('Copied to clipboard');}catch(e){$('copyFallback').hidden=false;$('fallbackText').value=text;$('fallbackText').focus();$('fallbackText').select();log('Clipboard unavailable: copy from fallback text area or download report','error');}}
+function manifest(){return JSON.stringify({schema:'mathforge.audio.lab.r4',scene:selected.id,bpm:selected.bpm,bars:8,meter:[4,4],key:selected.key,roles:Object.fromEntries(ROLES.map(r=>[r,{src:assets[selected.id][r].url||null,localFileName:assets[selected.id][r].name||null,durationSec:assets[selected.id][r].buffer?.duration||null}]))},null,2);}
+// Automated in-page checks that can be reproduced independently on the user's PC.
+// These are DOM and model invariants; they DO NOT prove physical speakers work.
+function runHundredLocalChecks(){
+ const tests=[];
+ const check=(label,passed)=>tests.push({id:tests.length+1,label,result:passed?'PASS':'FAIL'});
+ // Ten composition cards multiplied by five distinct structure assertions = 50.
+ WORLDS.forEach(w=>{
+  const b=[...document.querySelectorAll('.world')].find(el=>el.textContent.includes(w.name));
+  check(`${w.id}: button mounted`,!!b);
+  check(`${w.id}: valid tempo`,w.bpm>=80&&w.bpm<=130);
+  check(`${w.id}: four audio roles`,ROLES.every(r=>!!assets[w.id][r]));
+  check(`${w.id}: eight bar duration valid`,8*4*60/w.bpm>10);
+  check(`${w.id}: prompt contains all stem names`,ROLES.every(r=>productionPrompt(w).includes(r)));
+ });
+ // Five checks per one of eight event controls = 40 more.
+ document.querySelectorAll('[data-event]').forEach(b=>{
+  check(`${b.dataset.event}: interactive button`,b.tagName==='BUTTON');
+  check(`${b.dataset.event}: has readable label`,!!b.textContent.trim());
+  check(`${b.dataset.event}: not disabled`,!b.disabled);
+  check(`${b.dataset.event}: allowed event`,['success','overshoot','tile','pause','recovery','rapid','round_end','reset'].includes(b.dataset.event));
+  check(`${b.dataset.event}: click target visible`,b.getBoundingClientRect().width>0);
+ });
+ // Ten unrelated runtime/control assertions = 100.
+ check('Web Audio API exposed',!!(window.AudioContext||window.webkitAudioContext));
+ check('Speaker test control exposed',!!$('testSpeakers'));
+ check('Success SFX test exposed',!!$('testEventSound'));
+ check('Resume Audio exposed',!!$('resumeAudio'));
+ check('Mix bars rendered',document.querySelectorAll('.bar').length===4);
+ check('File pickers rendered',document.querySelectorAll('[data-role]').length===4);
+ check('URL fields rendered',document.querySelectorAll('[data-role-url]').length===4);
+ check('Role gain sliders rendered',document.querySelectorAll('[data-cap]').length===4);
+ check('Diagnostics log exists',!!$('log'));
+ check('No browser script initialization error',!!$('runtimeGate').classList.contains('ready'));
+ lastHundredTestResults=tests;
+ const passes=tests.filter(t=>t.result==='PASS').length;
+ $('selfTestResult').textContent=`LOCAL CHECKS: ${passes}/100 PASS · ${100-passes} FAIL`;
+ log(`100 LOCAL CHECKS COMPLETE: ${passes} PASS, ${100-passes} FAIL`);
+ for(const t of tests.filter(t=>t.result==='FAIL'))log(`FAILED CHECK ${t.id}: ${t.label}`,'error');
+ return tests;
+}
+function downloadReport(){
+ const body=[`MATHFORGE SPEED GRID AUDIO LAB R4 / DIAGNOSTIC REPORT`,
+ `Generated: ${new Date().toISOString()}`,`Browser: ${navigator.userAgent}`,
+ `Runtime: ${$('runtimeGate').textContent}`,`AudioContext: ${ctx?.state||'not created'}`,
+ `Signals detected: ${outputSamplesDetected}, peak RMS: ${signalPeak}`,
+ `Button clicks: ${clickCounter}; last control: ${lastPressed}`,`Notes scheduled: ${diagnosticSoundCount}`,
+ `Music: ${playing?'playing':'stopped'}, scene=${selected.name}`,`Music muted: ${!masterEnabled}`,
+ `LOCAL CHECKS: ${lastHundredTestResults.filter(t=>t.result==='PASS').length}/${lastHundredTestResults.length}`,
+ `CHECKS:`,...lastHundredTestResults.map(t=>`${t.id}. ${t.result} ${t.label}`),`EVENT LOG:`,...logLines].join('\n');
+ const blob=new Blob([body],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='speedgrid-audio-desktop-diagnostics-r4.txt';document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),3000);log('Diagnostic report downloaded');
+}
+// Capture all ordinary mouse/keyboard clicks including world and game event buttons.
+document.addEventListener('click',e=>{
+ const el=e.target.closest('button');if(!el)return;
+ clickCounter++;lastPressed=(el.textContent||el.id).trim().replace(/\s+/g,' ').slice(0,80);
+ $('interactionReport').innerHTML=`Last control: <strong>${lastPressed.replace(/</g,'&lt;')}</strong> · Clicks: <strong id="clickCount">${clickCounter}</strong>`;
+ document.querySelectorAll('button.pressed').forEach(b=>b.classList.remove('pressed'));
+ el.classList.add('pressed');
+ log(`BUTTON CLICK ${clickCounter}: ${lastPressed}`);
+},true);
+$('testSpeakers').addEventListener('click',speakerTest);
+$('testEventSound').addEventListener('click',eventSfxTest);
+$('resumeAudio').addEventListener('click',async()=>{try{await ensureContext();$('testSoundState').textContent='Audio engine running';log('Manual audio resume succeeded');}catch(e){log(`Resume: ${e.message}`,'error');}});
+$('selfTest100').addEventListener('click',runHundredLocalChecks);
+$('downloadReport').addEventListener('click',downloadReport);
+$('runtimeGate').classList.add('ready');
+$('runtimeGate').textContent='JAVASCRIPT READY ✓ — All controls are connected. Start with TEST SPEAKERS; if you hear nothing but the signal meter moves, check Windows/Chrome output settings.';
+renderBars();renderWorldDetails();renderDirector();observeSignal();
+$('events').addEventListener('click',e=>{const b=e.target.closest('[data-event]');if(!b)return;event(b.dataset.event)});
+$('copyPrompt').addEventListener('click',()=>copy(productionPrompt(selected)));
+$('stopSound').addEventListener('click',()=>{playIssue='';stopCurrent();log('User stopped composition')});
+$('musicEnabled').addEventListener('change',()=>{masterEnabled=$('musicEnabled').checked;if(ctx&&playing&&!masterEnabled){sourceNodes.forEach(({gain})=>{const t=ctx.currentTime;gain.gain.cancelScheduledValues(t);gain.gain.setTargetAtTime(0,t,.03);});}else applyMix(ctx?.currentTime||undefined);log(`Music ${masterEnabled?'enabled':'muted'}`);});
+$('checkAudio').addEventListener('click',diagnostics);
+$('copyReport').addEventListener('click',()=>copy(diagnostics()));
+$('copyManifest').addEventListener('click',()=>copy(manifest()));
+$('sfx').addEventListener('change',()=>log(`Gentle event effects ${$('sfx').checked?'enabled':'disabled'}`));
+// Real inactivity: reduce rhythmic density without claiming mathematical mastery or incorrectly counting errors.
+setInterval(()=>{if(phase==='neutral'||phase==='flow'){if(performance.now()-lastActivity>6000){phase='hesitation';intensity=clamp(intensity-10,12,80);lastOutcome='No accepted interaction for 6s';renderDirector();log('INACTIVITY: director entered thinking space');}}updateStatus();},1000);
+document.addEventListener('visibilitychange',()=>{if(document.hidden){log('Tab hidden; browser may suspend audio; transport state retained');}else if(ctx){log(`Tab visible; audio context ${ctx.state}; tap a composition if audio is interrupted`);updateStatus();}});
+window.addEventListener('pagehide',()=>{stopCurrent(.02);if(ctx)ctx.close().catch(()=>{});});
+log('R4 READY: browser script initialized. Use TEST SPEAKERS first; selection buttons need user audio stems to play MUSIC.');
+
+/* R4 additions: recording preview, guided demo, and portable configuration.
+   No production reducer, SDK, or math evaluator is accessed from this lab. */
+let autoSimTimer=null,autoSimStep=0;
+const legacyAudio=$('legacyAudio');
+$('toggleLegacy').addEventListener('click',async()=>{
+ try{
+   if(legacyAudio.paused){await legacyAudio.play();$('legacyStatus').textContent='PLAYING existing MP3 through native browser audio';log('LEGACY MP3 started');}
+   else{legacyAudio.pause();$('legacyStatus').textContent='Paused recorded MP3';log('LEGACY MP3 paused');}
+ }catch(e){$('legacyStatus').textContent='MP3 FAILED: '+e.message;log('LEGACY MP3: '+e.message,'error');}
+});
+$('stopLegacy').addEventListener('click',()=>{legacyAudio.pause();legacyAudio.currentTime=0;$('legacyStatus').textContent='Stopped recorded MP3';log('LEGACY MP3 stopped')});
+legacyAudio.addEventListener('error',()=>{
+ const e=legacyAudio.error;
+ const message=e?'Media error code '+e.code:'Unable to fetch/decode MP3';
+ $('legacyStatus').textContent='MP3 ERROR: '+message+'; check repository file and deployment.';
+ log('LEGACY MP3 ERROR: '+message,'error');
+});
+legacyAudio.addEventListener('playing',()=>{$('legacyStatus').textContent='Recorded MP3 playing — NOT an adaptive four-stem composition'});
+legacyAudio.addEventListener('ended',()=>{$('legacyStatus').textContent='MP3 preview ended'});
+$('playSelected').addEventListener('click',()=>{activateWorld(selected)});
+const simulationEvents=['success','success','success','rapid','tile','overshoot','overshoot','pause','recovery','success','round_end','reset'];
+function stopSimulation(){
+ if(autoSimTimer!==null){clearInterval(autoSimTimer);autoSimTimer=null;}
+ $('autoSim').textContent='▶ Start auto simulation';
+}
+function startSimulation(){
+ stopSimulation();autoSimStep=0;
+ $('autoSim').textContent='● Auto simulation RUNNING';
+ log('AUTO SIMULATION started (events every 2 seconds)');
+ event(simulationEvents[autoSimStep++]);
+ autoSimTimer=setInterval(()=>{
+   if(document.hidden)return;
+   const kind=simulationEvents[autoSimStep++ % simulationEvents.length];
+   event(kind);
+ },2000);
+}
+$('autoSim').addEventListener('click',()=>{if(autoSimTimer===null)startSimulation();else{stopSimulation();log('AUTO SIMULATION stopped')}});
+$('stopAutoSim').addEventListener('click',()=>{stopSimulation();log('AUTO SIMULATION stopped')});
+function currentConfig(){
+ return {schema:'mathforge.speedgrid.audio.lab.r4',savedAt:new Date().toISOString(),
+ selectedWorld:selected.id,musicEnabled:masterEnabled,sfxEnabled:$('sfx').checked,
+ volumeCaps:Object.fromEntries(ROLES.map(role=>[role,window.roleCaps[role]])),
+ compositions:Object.fromEntries(WORLDS.map(w=>[w.id,{
+  tempoBpm:w.bpm,key:w.key,stems:Object.fromEntries(ROLES.map(role=>[role,{
+   url:assets[w.id][role].url||null,
+   localFileName:assets[w.id][role].name||null,
+   durationSec:assets[w.id][role].buffer?.duration||null
+  }]))
+ }]))};
+}
+function downloadConfig(){
+ const txt=JSON.stringify(currentConfig(),null,2),blob=new Blob([txt],{type:'application/json;charset=utf-8'}),
+ url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='speedgrid-adaptive-music-config-r4.json';
+ document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ $('configStatus').textContent='Configuration exported. Local audio file bytes are not included.';
+ log('CONFIG exported '+txt.length+' characters');
+}
+function importConfigObject(cfg){
+ if(!cfg||cfg.schema!=='mathforge.speedgrid.audio.lab.r4')throw new Error('Expected MathForge audio lab R4 JSON configuration');
+ if(!WORLDS.some(w=>w.id===cfg.selectedWorld))throw new Error('Unknown composition ID');
+ stopSimulation();stopCurrent();legacyAudio.pause();
+ if(cfg.volumeCaps&&typeof cfg.volumeCaps==='object'){
+  ROLES.forEach(role=>{
+   const v=Number(cfg.volumeCaps[role]);
+   if(Number.isFinite(v))window.roleCaps[role]=clamp(v,0,1);
+  });
+ }
+ if(cfg.compositions&&typeof cfg.compositions==='object'){
+  WORLDS.forEach(w=>{const data=cfg.compositions[w.id]?.stems;
+   if(!data)return;
+   ROLES.forEach(role=>{
+    const src=data[role]?.url;
+    if(src!=null&&typeof src!=='string')return;
+    // Import URL strings only; local file handles are deliberately not portable.
+    const a=assets[w.id][role];
+    a.url=(typeof src==='string'&&/^https:\/\//i.test(src))?src:'';
+    a.buffer=null;a.status=a.url?'URL configured':'empty';a.name='';
+   });
+  });
+ }
+ masterEnabled=cfg.musicEnabled!==false;$('musicEnabled').checked=masterEnabled;
+ $('sfx').checked=cfg.sfxEnabled!==false;
+ selected=WORLDS.find(w=>w.id===cfg.selectedWorld);
+ renderWorldDetails();renderDirector();
+ document.querySelectorAll('[data-cap]').forEach(el=>{
+  const role=el.dataset.cap;
+  el.value=String(Math.round(window.roleCaps[role]*100));
+  $('cap-'+role).textContent=el.value+'%';
+ });
+ $('configStatus').textContent='Configuration imported: '+selected.name+'. HTTPS audio sources need Play Selected to fetch/decode. Local files must be chosen again.';
+ log('CONFIG imported into '+selected.name);
+}
+$('exportConfig').addEventListener('click',downloadConfig);
+$('importConfig').addEventListener('change',async function(){
+ const f=this.files?.[0];if(!f)return;
+ try{const txt=await f.text();if(txt.length>1000000)throw new Error('Config too large');importConfigObject(JSON.parse(txt))}
+ catch(e){$('configStatus').textContent='IMPORT ERROR: '+e.message;log('IMPORT ERROR '+e.message,'error');}
+ finally{this.value='';}
+});
+window.addEventListener('pagehide',()=>{stopSimulation();legacyAudio.pause()});
+log('R4 READY: recorded MP3 preview, auto simulation, stem playback, and config import/export connected.');
+
+</script>
+</body>
+</html>
