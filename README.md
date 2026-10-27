@@ -1,3 +1,17 @@
+# MathForge Sound Lab — CURRENT ENTRY POINT
+
+**Primary interactive application:** [Speed Grid Adaptive Music Studio R4](https://paulanerj.github.io/Mathforge-sounds-and-music/speedgrid-adaptive-music-lab.html)
+
+**Sound-only fallback diagnostic:** [Speed Grid Audio Button Check R3](https://paulanerj.github.io/Mathforge-sounds-and-music/speedgrid-audio-check-r3.html)
+
+**How to use it and prepare four professional music stems:** [R4 setup instructions](SPEEDGRID_ADAPTIVE_AUDIO_R4_SETUP.md)
+
+R4 is an independent browser-based design and diagnostic application, not the live Speed Grid game or a Gen2 SDK migration. A legacy repository MP3 is available as a technical audio preview; the planned four synchronized adaptive recording stems have not been delivered yet.
+
+---
+
+## Historical AI Studio application
+
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
