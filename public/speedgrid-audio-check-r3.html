@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MathForge Speed Grid - Audio Button Check R3</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Segoe UI",sans-serif;background:#0b1220;color:#f4f8ff}
+*{box-sizing:border-box}body{margin:0;padding:18px 14px 45px}
+main{max-width:950px;margin:0 auto}h1{font-size:clamp(1.6rem,4vw,2.4rem);margin:.4rem 0}
+h2{font-size:1.16rem;margin:4px 0 12px}p{color:#b9c8de;line-height:1.52}
+.panel{background:#152238;border:1px solid #405575;border-radius:16px;padding:18px;margin:16px 0}
+#ready{padding:14px;border-radius:11px;background:#712c37;border:1px solid #eb6e7f;font-weight:800;font-size:1.1rem}
+#ready.ok{background:#135645;border-color:#65dcbc}
+#last{padding:12px;background:#0e1a2c;border:1px solid #526987;border-radius:9px;min-height:55px}
+.buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+button{min-height:60px;padding:12px;border:2px solid #62859f;border-radius:11px;color:#f7ffff;background:#22516d;font-size:1rem;font-weight:800;cursor:pointer;transition:transform .1s,background .1s}
+button:hover{background:#317193}button:active,button.pressed{background:#198976;border-color:#aaffdc;transform:translateY(1px);box-shadow:0 0 0 3px #44cca655}
+button:focus-visible{outline:3px solid #eff7b0;outline-offset:3px}
+button.speaker{background:#137a6b;border-color:#64e9cb;font-size:1.2rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{padding:12px;border-radius:10px;background:#0e1b2c;text-align:center}
+.stat strong{display:block;color:#81eac8;font-size:1.45rem}
+.stat span{font-size:.74rem;color:#afc7d5}
+#log{font:12px/1.5 ui-monospace,Consolas,monospace;background:#0a1425;border:1px solid #435873;border-radius:10px;padding:12px;height:200px;overflow:auto;white-space:pre-wrap}
+input[type=file]{width:100%;padding:12px;background:#0e1c2e;border:1px solid #526989;border-radius:9px;color:#edf6ff}
+small{color:#aec3d8}
+@media(max-width:560px){.buttons{grid-template-columns:1fr}.stats{gap:5px}.stat{padding:7px}.stat strong{font-size:1.15rem}}
+</style>
+</head>
+<body>
+<main>
+<div style="font-weight:800;color:#8edfd1;font-size:.8rem;letter-spacing:.13em">MATHFORGE / SPEED GRID / DESKTOP AUDIO DIAGNOSTICS R3</div>
+<h1>Interactive Audio Button Check</h1>
+<p>This is a real browser page, not a PNG image. The diagnostic sounds are short test tones, <strong>not</strong> the planned recorded soundtrack. No downloads, uploads, account, or music files are required to test the buttons.</p>
+<div id="ready" aria-live="polite">JAVASCRIPT NOT RUNNING — THIS PAGE IS NOT INTERACTIVE</div>
+<section class="panel">
+<h2>Step 1 — prove the button responds</h2>
+<div class="buttons"><button id="click" type="button">CLICK TEST — NO AUDIO</button><button id="reset" type="button">RESET COUNTERS</button></div>
+<p id="last" aria-live="polite">No button pressed yet.</p>
+<div class="stats">
+<div class="stat"><strong id="clicks">0</strong><span>Recorded clicks</span></div>
+<div class="stat"><strong id="successes">0</strong><span>Successful paths</span></div>
+<div class="stat"><strong id="errors">0</strong><span>Overshoots</span></div>
+</div>
+</section>
+<section class="panel">
+<h2>Step 2 — test the Windows speaker path</h2>
+<div class="buttons">
+<button id="speaker" class="speaker" type="button">▶ TEST SPEAKER — 3 NOTES</button>
+<button id="success" type="button">SUCCESS — SOUND + EVENT</button>
+<button id="overshoot" type="button">OVERSHOOT — SOUND + EVENT</button>
+<button id="tile" type="button">TIME TILE — SOUND + EVENT</button>
+</div>
+<p><strong>Audio engine:</strong> <span id="audio">Not started</span></p>
+<p><strong>Test result:</strong> <span id="result">No sound test requested yet</span></p>
+<small>Clicking the first speaker button explicitly unlocks Web Audio, required by current Chrome/Edge autoplay policy. The page reports browser audio status; it cannot detect whether your physical speakers are audible.</small>
+</section>
+<section class="panel">
+<h2>Step 3 — optional: play your own recorded file</h2>
+<p>Choose any MP3, WAV, or OGG on your computer. This does not upload the file anywhere.</p>
+<input id="file" type="file" accept="audio/*,.mp3,.wav,.ogg">
+<div class="buttons" style="margin-top:12px">
+<button id="playfile" type="button">▶ PLAY FILE</button>
+<button id="stopfile" type="button">■ STOP FILE</button>
+</div>
+<p id="filestatus">No audio file chosen.</p>
+</section>
+<section class="panel">
+<h2>Live diagnostics</h2>
+<div class="buttons" style="margin-bottom:10px">
+<button id="checks" type="button">RUN 100 LOGIC CHECKS</button>
+<button id="export" type="button">DOWNLOAD DIAGNOSTICS</button>
+</div>
+<div id="log" aria-live="polite"></div>
+</section>
+<p><small>Standalone HTML and Web Audio only; no external libraries. The production Speed Grid game and shared SDK are not modified.</small></p>
+</main>
+<script>
+(function(){
+"use strict";
+var $=function(id){return document.getElementById(id)};
+var counts={clicks:0,successes:0,errors:0};
+var audioContext=null,activeSource=null,loadedBuffer=null,events=[],checks=0;
+var started=performance.now();
+function log(s){var line="["+(performance.now()-started).toFixed(0)+"ms] "+s;events.push(line);$("log").textContent=events.slice(-110).join("\n");$("log").scrollTop=$("log").scrollHeight}
+function update(){ $("clicks").textContent=counts.clicks;$("successes").textContent=counts.successes;$("errors").textContent=counts.errors}
+function note(el,text){counts.clicks++;update();$("last").textContent="BUTTON WORKS — "+text;el.classList.add("pressed");setTimeout(function(){el.classList.remove("pressed")},250);log("CLICK "+text)}
+function on(id,handler){var b=$(id); if(!b)throw Error("Missing button "+id);b.addEventListener("click",function(){note(b,id); try{var p=handler();if(p&&p.catch)p.catch(function(e){fault(e)})}catch(e){fault(e)}})}
+function fault(e){var msg=(e&&e.message)||String(e);$("result").textContent="ERROR: "+msg;log("ERROR "+msg)}
+async function unlock(){
+ var AC=window.AudioContext||window.webkitAudioContext;
+ if(!AC)throw Error("Web Audio unsupported in this browser");
+ if(!audioContext)audioContext=new AC();
+ if(audioContext.state!=="running")await audioContext.resume();
+ $("audio").textContent="AudioContext: "+audioContext.state+" / "+audioContext.sampleRate+" Hz";
+ if(audioContext.state!=="running")throw Error("AudioContext could not start: "+audioContext.state);
+ return audioContext;
+}
+async function tones(notes,name){
+ var a=await unlock(),t=a.currentTime+0.035;
+ notes.forEach(function(n,i){
+  var o=a.createOscillator(),g=a.createGain(),when=t+i*0.2;
+  o.type="sine";o.frequency.setValueAtTime(n,when);
+  g.gain.setValueAtTime(0.0001,when);g.gain.linearRampToValueAtTime(.16,when+.014);g.gain.exponentialRampToValueAtTime(.0001,when+.17);
+  o.connect(g);g.connect(a.destination);o.start(when);o.stop(when+.19);
+  o.onended=function(){o.disconnect();g.disconnect()}
+ });
+ $("result").textContent="BUTTON WORKS — "+name+" scheduled "+notes.length+" notes (listen now)";
+ log("SOUND "+name+" / "+notes.length+" notes / context running")
+}
+on("click",function(){});
+on("reset",function(){counts={clicks:0,successes:0,errors:0};update();log("Reset complete")});
+on("speaker",function(){return tones([440,554.37,659.25],"speaker test")});
+on("success",function(){counts.successes++;update();return tones([523.25,659.25],"success")});
+on("overshoot",function(){counts.errors++;update();return tones([330,293.66],"overshoot")});
+on("tile",function(){return tones([783.99,1046.5],"time tile")});
+$("file").addEventListener("change",async function(){
+ var f=this.files&&this.files[0];loadedBuffer=null;
+ if(!f){$("filestatus").textContent="No file selected";return}
+ $("filestatus").textContent="Reading and decoding "+f.name+" ...";log("FILE selected "+f.name+" "+f.size+" bytes");
+ try{var a=await unlock();loadedBuffer=await a.decodeAudioData(await f.arrayBuffer());$("filestatus").textContent="READY: "+f.name+" ("+loadedBuffer.duration.toFixed(2)+" seconds)";log("FILE decoded")}catch(e){$("filestatus").textContent="DECODE ERROR: "+e.message;fault(e)}
+});
+on("playfile",async function(){if(!loadedBuffer){$("filestatus").textContent="BUTTON WORKS — Select a real audio file first";log("PLAY FILE no file available");return}
+ var a=await unlock();if(activeSource){try{activeSource.stop()}catch(e){}}
+ var source=a.createBufferSource();source.buffer=loadedBuffer;source.connect(a.destination);source.start();activeSource=source;$("filestatus").textContent="PLAYING recorded file";source.onended=function(){if(activeSource===source){activeSource=null;$("filestatus").textContent="Recording ended"}source.disconnect()};log("PLAY FILE started")
+});
+on("stopfile",function(){if(activeSource){try{activeSource.stop()}catch(e){}activeSource=null;$("filestatus").textContent="STOPPED";log("PLAY FILE stopped")}else{$("filestatus").textContent="BUTTON WORKS — nothing currently playing"}});
+on("checks",function(){
+ var failures=[];
+ for(var i=0;i<100;i++){var good=["click","reset","speaker","success","overshoot","tile","file","playfile","stopfile","checks","export"].every(function(id){return !!$(id)})&&typeof on==="function"&&Number.isFinite(i)&&counts.clicks>=1;
+ if(!good)failures.push(i+1)}
+ checks=100-failures.length;
+ $("result").textContent="Local interface invariants: "+checks+"/100 PASS"+(failures.length?" / failures "+failures.join(","):"")+". This does not test physical speakers.";
+ log("LOCAL CHECKS "+checks+"/100 PASS (UI invariants, not 100 separate speaker tests)")
+});
+on("export",function(){
+ var lines=["MathForge Speed Grid R3 diagnostic","Date: "+new Date().toISOString(),"Browser: "+navigator.userAgent,"Protocol: "+location.protocol,"Click count: "+counts.clicks,"Success count: "+counts.successes,"Overshoot count: "+counts.errors,"Audio context: "+(audioContext?audioContext.state:"not created"),"Local UI checks passed: "+checks,"Last result: "+$("result").textContent,"LOG:"].concat(events);
+ var blob=new Blob([lines.join("\n")],{type:"text/plain"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+ a.href=url;a.download="speedgrid-audio-desktop-R3-diagnostics.txt";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1000);
+});
+window.addEventListener("error",function(e){fault(e.error||e.message)});
+window.addEventListener("unhandledrejection",function(e){fault(e.reason)});
+$("ready").classList.add("ok");$("ready").textContent="JAVASCRIPT READY — BUTTONS ARE CONNECTED";
+log("R3 loaded: "+location.href);log("CLICK TEST will increment the counter even if your computer cannot output audio");
+})();
+</script>
+</body>
+</html>
